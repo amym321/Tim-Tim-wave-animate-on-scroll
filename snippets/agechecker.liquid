@@ -1,0 +1,56 @@
+{% assign logo_image_end = shop.metafields.agecheckerVsARddsz9.logo_image.url | split: '/' | last %}
+{% if logo_image_end != blank %}
+  {% assign logo_image_asset = logo_image_end | split: '?' | first %}
+  {% assign logo_image_url = logo_image_asset | asset_img_url: '300x' %}
+{% endif %}
+
+{% assign modal_image_end = shop.metafields.agecheckerVsARddsz9.modal_image.url | split: '/' | last %}
+{% if modal_image_end != blank %}
+  {% assign modal_image_asset = modal_image_end | split: '?' | first %}
+  {% assign modal_image_url = modal_image_asset | asset_img_url: '800x' %}
+{% endif %}
+
+{% assign background_image_end = shop.metafields.agecheckerVsARddsz9.background_image.url | split: '/' | last %}
+{% if background_image_end != blank %}
+  {% assign background_image_asset = background_image_end | split: '?' | first %}
+  {% assign background_image_url = background_image_asset | asset_img_url: '2000x' %}
+{% endif %}
+
+<script>
+  window.agecheckerVsARddsz9 = {
+    fields: {{ shop.metafields.agecheckerVsARddsz9 | json }},
+    images: {
+      logo_image: '{{ logo_image_url }}',
+      modal_image: '{{ modal_image_url }}',
+      background_image: '{{ background_image_url }}'
+    },
+    templateData: {
+      full: {{ template | json }},
+      directory: {{ template.directory | json }},
+      name: {{ template.name | json }},
+      suffix: {{ template.suffix | json }},
+      {% if product.id != blank %}
+        productId: {{ product.id }},
+        tags: {{ product.tags | json }},
+      {% endif %}
+      {% if collection.id != blank %}
+        collectionId: {{ collection.id }},
+      {% endif %}
+      {% if collection.handle != blank %}
+        collectionHandle: {{ collection.handle | json }},
+      {% endif %}
+      {% if page.id != blank %}
+        pageId: {{ page.id }},
+      {% endif %}
+      {% if article.id != blank %}
+        articleId: {{ article.id }},
+      {% endif %}
+    }
+  };
+  if (window.location.pathname === '/age-checker-preview' || window.agecheckerVsARddsz9.fields.active === 'QFw7fWSBpVZDmWX9U7') {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://agechecker.northern-apps.com/age-checker-front/dist/js/agechecker.min.js?shop=tim-tim-deli-to-bar-independent-shop.myshopify.com';
+    document.body.appendChild(script);
+  }
+</script>
