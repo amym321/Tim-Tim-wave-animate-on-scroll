@@ -1,92 +1,220 @@
-{% comment %}
-  This sections requires the same `paginate_by` variable value as
-  the other sections for the ajax loading to work.
-  If you change the number below, it must also be changed in:
-  - sections/collection-template
-  - sections/featured-collection-slider
-  - snippets/page-block-featured-collection-slider
-{% endcomment %}
-{%- liquid
-  assign paginate_by = 24
-  assign ajax_paginate = false
-  assign collection_count = 0
+  {% comment %}
+    This sections requires the same `paginate_by` variable value as
+    the other sections for the ajax loading to work.
+    If you change the number below, it must also be changed in:
+    - sections/collection-template
+    - sections/featured-collection-slider
+    - snippets/page-block-featured-collection-slider
+  {% endcomment %}
+  {%- liquid
+    assign paginate_by = 24
+    assign ajax_paginate = false
+    assign collection_count = 0
 
-  assign collection = collections[section.settings.home_featured_products]
-  if collection != blank
-    assign collection_count = collection.all_products_count
+    assign collection = collections[section.settings.home_featured_products]
+    if collection != blank
+      assign collection_count = collection.all_products_count
 
-    if collection_count > paginate_by
-      assign ajax_paginate = true
+      if collection_count > paginate_by
+        assign ajax_paginate = true
+      endif
     endif
-  endif
--%}
+  -%}
 
-{%- assign grid_item_width = 'grid-product--small' -%}
-{%- assign scrollable = true -%}
-{%- case section.settings.per_row -%}
-  {%- when 'small' -%}
-    {%- if collection_count <= 3 -%}
-      {%- assign scrollable = false -%}
-    {%- endif -%}
-  {%- when 'medium' -%}
-    {%- assign grid_item_width = 'grid-product--medium' -%}
-  {%- when 'large' -%}
-    {%- assign grid_item_width = 'grid-product--large' -%}
-{%- endcase -%}
+  {%- assign grid_item_width = 'grid-product--small' -%}
+  {%- assign scrollable = true -%}
+  {%- case section.settings.per_row -%}
+    {%- when 'small' -%}
+      {%- if collection_count <= 3 -%}
+        {%- assign scrollable = false -%}
+      {%- endif -%}
+    {%- when 'medium' -%}
+      {%- assign grid_item_width = 'grid-product--medium' -%}
+    {%- when 'large' -%}
+      {%- assign grid_item_width = 'grid-product--large' -%}
+  {%- endcase -%}
 
-<div class="index-section index-section--overflow-scroller{% if section.settings.alt %} index-section--alt{% endif %}">
+  <div class="index-section index-section--overflow-scroller{% if section.settings.alt %} index-section--alt{% endif %}">
 
-  <div
-    id="CollectionSection-{{ section.id }}"
-    data-section-id="{{ section.id }}"
-    data-section-type="featured-collection"
-    data-scrollable="true"
-    data-product-sliders-mobile="false"
-    data-paginate="{{ ajax_paginate }}"
-    data-paginate-by="{{ paginate_by }}"
-    data-collection-url="{{ collection.url }}"
-    data-collection-count="{{ collection.all_products_count }}"
-    data-grid-item-width="{{ grid_item_width }}"
-    {% if section.settings.per_row == 'small' and collection.all_products_count <= 3 %} data-center-grid{% endif %}
-    data-aos>
-    {%- if section.settings.title != blank -%}
-      <div class="page-width">
-        <header class="section-header" data-aos>
-          <h2 class="section-header__title appear-delay">
+    <div
+      id="CollectionSection-{{ section.id }}"
+      data-section-id="{{ section.id }}"
+      data-section-type="featured-collection"
+      data-scrollable="true"
+      data-product-sliders-mobile="false"
+      data-paginate="{{ ajax_paginate }}"
+      data-paginate-by="{{ paginate_by }}"
+      data-collection-url="{{ collection.url }}"
+      data-collection-count="{{ collection.all_products_count }}"
+      data-grid-item-width="{{ grid_item_width }}"
+      {% if section.settings.per_row == 'small' and collection.all_products_count <= 3 %} data-center-grid{% endif %}
+      data-aos>
+      {%- if section.settings.title != blank -%}
+        <div class="page-width">
+          <header class="section-header" data-aos>
+            <h2 class="section-header__title appear-delay">
 
-{% comment %} added code. per •	Moving text along a curved path  {% endcomment %}
-            <!-- {%- style -%}
-              .text {
-                font-size: 60px;
-                color: #000000;
+  {% comment %} added code. per css tricks. 
+  does NOT work for any headlines. text is there, but no movement
+  change startOffset="1200px"  to 600 or 800. otherwise, text is off the right side
+  negative "-" in front of percent in JS to go left to right {% endcomment %}
+              <!-- {%- style -%}
+                .text {
+                  font-size: 60px;
+                  color: #000000;
+                }
+              {%- endstyle -%}
+              <script>
+                const textPath = document.querySelector("#text-path");
+
+                const h = document.documentElement, 
+                      b = document.body,
+                      st = 'scrollTop',
+                      sh = 'scrollHeight';
+
+                document.addEventListener("scroll", e => {
+                  let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+                  textPath.setAttribute("startOffset", (-percent * 40) + 1200)
+                });
+              </script>
+
+              <svg width="100%" height="160px" viewBox="0 0 1098.72 89.55">
+                <path id="curve" fill="transparent" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+                <text width="100%" style="transform:translate3d(0,0,0);">
+                  <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startOffset="1200px" id="text-path">
+              {{ section.settings.title }}
+                  </textPath>
+                </text>
+              </svg> -->
+  {% comment %} end added code {% endcomment %}
+
+  {% comment %} added code. per keyframers exactly. WORKS. right to left {% endcomment %}
+  <!-- <script>
+    console.clear();
+
+    var textPath = document.querySelector('#text-path');
+    var textContainer = document.querySelector('#text-container');
+    var path = document.querySelector( textPath.getAttribute('href') );
+    var pathLength = path.getTotalLength();
+    console.log(pathLength);
+
+    function updateTextPathOffset(offset){
+      textPath.setAttribute('startOffset', offset); 
+    }
+
+    updateTextPathOffset(pathLength);
+
+    function onScroll(){
+      requestAnimationFrame(function(){
+        var rect = textContainer.getBoundingClientRect();
+        var scrollPercent = rect.y / window.innerHeight;
+        console.log(scrollPercent);
+        updateTextPathOffset( scrollPercent * 2 * pathLength );
+      });
+    }
+
+    window.addEventListener('scroll',onScroll);
+  </script>
+
+  <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+    <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+    <text y="40">
+      <textPath id="text-path" href="#text-curve" startOffset="200">
+  {{ section.settings.title }}
+      </textPath>
+    </text>
+  </svg> -->
+  {% comment %} end added code. {% endcomment %}
+
+
+{% comment %} added code. per keyframers 
+adjusting window.addEventListener('scroll',onScroll) for other title 
+white wines working when its alone. 
+white wines working only when both code scripts run. 
+red wines doesn't work alone {% endcomment %}
+
+            <!-- <script>
+              console.clear();
+
+              var textPath = document.querySelector('#text-path');
+              var textContainer = document.querySelector('#text-container');
+              var path = document.querySelector( textPath.getAttribute('href') );
+              var pathLength = path.getTotalLength();
+              console.log(pathLength);
+
+              function updateTextPathOffset(offset){
+                textPath.setAttribute('startOffset', offset); 
               }
-            {%- endstyle -%}
-            <script>
-              const textPath = document.querySelector("#text-path");
 
-              const h = document.documentElement, 
-                    b = document.body,
-                    st = 'scrollTop',
-                    sh = 'scrollHeight';
+              updateTextPathOffset(pathLength);
 
-              document.addEventListener("scroll", e => {
-                let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-                textPath.setAttribute("startOffset", (-percent * 40) + 1200)
-              });
+              function onScroll(){
+                requestAnimationFrame(function(){
+                  var rect = textContainer.getBoundingClientRect();
+                  var scrollPercent = rect.y / window.innerHeight;
+                  console.log(scrollPercent);
+                  updateTextPathOffset( scrollPercent * 2 * pathLength );
+                });
+              }
+
+              window.addEventListener('scroll',onScroll);
             </script>
 
-            <svg width="100%" height="160px" viewBox="0 0 1098.72 89.55">
-              <path id="curve" fill="transparent" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
-              <text width="100%" style="transform:translate3d(0,0,0);">
-                <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startOffset="1200px" id="text-path">
+{% if section.settings.title contains 'WHITE WINES' %}
+            <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+              <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+              <text y="40">
+                <textPath id="text-path" href="#text-curve" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
               </text>
-            </svg> -->
-{% comment %} end added code {% endcomment %}
+            </svg>
+{% endif %} -->
 
-{% comment %} added code. per keyframers {% endcomment %}
-          <script>
+
+
+            <script>
+              console.clear();
+
+              var textPath2 = document.querySelector('#text-path2');
+              var textContainer2 = document.querySelector('#text-container2');
+              var path2 = document.querySelector( textPath2.getAttribute('href') );
+              var pathLength2 = path2.getTotalLength();
+              console.log(pathLength2);
+
+              function updateTextPathOffset2(offset2){
+                textPath2.setAttribute('startOffset', offset2); 
+              }
+
+              updateTextPathOffset2(pathLength2);
+
+              function onScroll2(){
+                requestAnimationFrame(function(){
+                  var rect2 = textContainer2.getBoundingClientRect();
+                  var scrollPercent2 = rect2.y / window.innerHeight;
+                  console.log(scrollPercent2);
+                  updateTextPathOffset2( scrollPercent2 * 2 * pathLength2 );
+                });
+              }
+
+              window.addEventListener('scroll',onScroll2);
+            </script>
+
+{% if section.settings.title contains 'RED WINES' %}
+            <svg id="text-container2" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+              <path id="text-curve2" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+              <text y="40">
+                <textPath id="text-path2" href="#text-curve2" startOffset="200">
+            {{ section.settings.title }}
+                </textPath>
+              </text>
+            </svg>
+{% endif %}
+{% comment %} end added code. {% endcomment %}
+
+  {% comment %}  per keyframers exactly. WORKS. right to left 
+   moves red wines only (it's the last if statement) {% endcomment %}
+          <!-- <script>
             console.clear();
 
             var textPath = document.querySelector('#text-path');
@@ -113,6 +241,7 @@
             window.addEventListener('scroll',onScroll);
           </script>
 
+{% if section.settings.title contains 'WHITE WINES' %}
           <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
             <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
             <text y="40">
@@ -121,138 +250,387 @@
               </textPath>
             </text>
           </svg>
+{% endif %}
+
+{% if section.settings.title contains 'LA TIENDA' %}
+          <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+            <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+            <text y="40">
+              <textPath id="text-path" href="#text-curve" startOffset="200">
+          {{ section.settings.title }}
+              </textPath>
+            </text>
+          </svg>
+{% endif %}
+
+{% if section.settings.title contains 'RED WINES' %}
+          <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+            <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+            <text y="40">
+              <textPath id="text-path" href="#text-curve" startOffset="200">
+          {{ section.settings.title }}
+              </textPath>
+            </text>
+          </svg>
+{% endif %} -->
 {% comment %} end added code. {% endcomment %}
 
-          </h2>
-          {%- if section.settings.description != blank -%}
-            <div class="rte section-header__description section-header__description--large appear-delay-1">
-              {{ section.settings.description }}
-            </div>
-          {%- endif -%}
-        </header>
-      </div>
-    {%- endif -%}
+  {% comment %} added code. per keyframers 
+  trying a for loop like in theme.js {% endcomment %}
+    <!-- <script>
 
-    <div class="overflow-scroll-wrap" data-ajax-loader>
-      <button
-        type="button"
-        class="btn btn--tertiary overflow-scroller__arrow overflow-scroller__arrow--left overflow-scroller--disable-left small--hide"
-        {% unless scrollable %}hidden{% endunless %}
-        aria-hidden="true"
-        aria-label="{{ 'general.pagination.previous' | t }}"
-        data-arrow>
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
-      </button>
-      <button
-        type="button"
-        class="btn btn--tertiary overflow-scroller__arrow overflow-scroller__arrow--right small--hide"
-        {% unless scrollable %}hidden{% endunless %}
-        aria-hidden="true"
-        aria-label="{{ 'general.pagination.next' | t }}"
-        data-arrow>
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-      </button>
-      <div
-        class="overflow-scroller"
-        data-pagination-wrapper>
-        <div
-          class="grid grid--uniform grid--scattered-large-2 grid--scattered-small-2"
-          data-aos="overflow__animation"
-          data-product-container>
+for (var i = 0; i < sections.instances.length; i++) {
+        var instance = sections.instances[i];
+        
+    console.clear();
 
-          {%- if
-            section.settings.home_featured_products == blank
-            or collections[section.settings.home_featured_products].empty?
-            or collections[section.settings.home_featured_products].products_count == 0 -%}
+    var textPath = document.querySelector('#text-path');
+    var textContainer = document.querySelector('#text-container');
+    var path = document.querySelector( textPath.getAttribute('href') );
+    var pathLength = path.getTotalLength();
+    console.log(pathLength);
 
-            {%- for i in (1..paginate_by) -%}
-              <div class="grid__item grid-product {{ grid_item_width }}{% if settings.product_hover_details %} grid-product__hover-details{% endif %}">
-                <div class="grid-product__content">
-                  <a href="{{ product.url | within: collection }}" class="grid-product__link {% if sold_out %} grid-product__link--disabled{% endif %}">
-                    <div class="product-slider"
-                      data-image-count="1"
-                      data-id="1234">
-                      <div class="product-slide">
-                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                        <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
-                      </div>
-                    </div>
-                    <div class="grid-product__meta">
-                      <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
-                      <div class="grid-product__price">$29</div>
-                    </div>
-                  </a>
-                </div>
+    function updateTextPathOffset(offset){
+      textPath.setAttribute('startOffset', offset);
+    }
+
+    function onScroll(){
+      requestAnimationFrame(function(){
+        var rect = textContainer.getBoundingClientRect();
+        var scrollPercent = rect.y / window.innerHeight;
+        console.log(scrollPercent);
+        updateTextPathOffset( -scrollPercent * 2 * pathLength );
+      });
+    }
+
+    for (var i = 0; i < 11; i++) {
+      updateTextPathOffset(pathLength);
+
+      window.addEventListener('scroll',onScroll);  
+    }
+
+}
+  </script>
+
+  <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+    <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+    <text y="40">
+      <textPath id="text-path" href="#text-curve" startOffset="200">
+        {{ section.settings.title }}
+      </textPath>
+    </text>
+  </svg> -->
+  {% comment %} end added code. {% endcomment %}
+
+  {% comment %} added code. per keyframers exactly. WORKS. right to left.  requestAnimationFrame 
+  moves WHITE WINES and not LA TIENDA. so, does forst if statment  {% endcomment %}
+  <!-- {% if section.settings.title contains 'WHITE WINES' %}
+            <script>
+              console.clear();
+
+              var textPath = document.querySelector('#text-path');
+              var textContainer = document.querySelector('#text-container');
+              var path = document.querySelector( textPath.getAttribute('href') );
+              var pathLength = path.getTotalLength();
+              console.log(pathLength);
+
+              function updateTextPathOffset(offset){
+                textPath.setAttribute('startOffset', offset); 
+              }
+
+              updateTextPathOffset(pathLength);
+
+              function onScroll(){
+                requestAnimationFrame(function(){
+                  var rect = textContainer.getBoundingClientRect();
+                  var scrollPercent = rect.y / window.innerHeight;
+                  console.log(scrollPercent);
+                  updateTextPathOffset( scrollPercent * 2 * pathLength );
+                });
+              }
+
+              window.addEventListener('scroll',onScroll);
+            </script>
+
+
+            <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+              <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+              <text y="40">
+                <textPath id="text-path" href="#text-curve" startOffset="200">
+            {{ section.settings.title }}
+                </textPath>
+              </text>
+            </svg>
+{% endif %}
+
+{% if section.settings.title contains 'LA TIENDA' %}
+            <script>
+              console.clear();
+
+              var textPath = document.querySelector('#text-path');
+              var textContainer = document.querySelector('#text-container');
+              var path = document.querySelector( textPath.getAttribute('href') );
+              var pathLength = path.getTotalLength();
+              console.log(pathLength);
+
+              function updateTextPathOffset(offset){
+                textPath.setAttribute('startOffset', offset); 
+              }
+
+              updateTextPathOffset(pathLength);
+
+              function onScroll(){
+                requestAnimationFrame(function(){
+                  var rect = textContainer.getBoundingClientRect();
+                  var scrollPercent = rect.y / window.innerHeight;
+                  console.log(scrollPercent);
+                  updateTextPathOffset( scrollPercent * 2 * pathLength );
+                });
+              }
+
+              window.addEventListener('scroll',onScroll);
+            </script>
+
+            <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+              <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+              <text y="40">
+                <textPath id="text-path" href="#text-curve" startOffset="200">
+            {{ section.settings.title }}
+                </textPath>
+              </text>
+            </svg>
+{% endif %} -->
+  {% comment %} end added code. {% endcomment %}
+
+{% comment %} added code. per keyframers
+added if statements & console.log to see what was happening
+LA TIENDA was waht console said the section.settings.title was 11 times. 
+but NEW DROPS was the heading that moved
+{% endcomment %}
+              <!-- <script>
+                console.clear();
+            
+                var textPath = document.querySelector('#text-path');
+                var textContainer = document.querySelector('#text-container');
+                var path = document.querySelector( textPath.getAttribute('href') );
+                var pathLength = path.getTotalLength();
+                console.log(pathLength);
+            
+                function updateTextPathOffset(offset){
+                  textPath.setAttribute('startOffset', offset);
+                }
+            
+                function onScroll(){
+                  requestAnimationFrame(function(){
+                    var rect = textContainer.getBoundingClientRect();
+                    var scrollPercent = rect.y / window.innerHeight;
+                    console.log(scrollPercent);
+                    updateTextPathOffset( -scrollPercent * 2 * pathLength );
+                  });
+                }
+            
+            
+            
+              for (var i = 0; i < 11; i++) {
+            
+                updateTextPathOffset(pathLength);
+            
+                window.addEventListener('scroll',onScroll);
+            
+            
+                if  ({{ section.settings.title | json }}  == 'Red Wines') {
+                  console.log( 'section.settings.title' );
+                }
+            
+                var title = 'blank'
+                console.log( 'blank ' + title + i );
+            
+                var title = {{ section.settings.title | json }}
+                console.log( i );
+            
+                console.log( 'real ' +  title + i );
+            
+                console.log( 'test' );
+            
+                if  ({{ section.settings.title | json }}  == 'RED WINES') {
+                  console.log( 'section.settings.title' );
+                  console.log( 'red wine' );
+                }
+              
+                if  ({{ section.settings.title | json }}  == 'WHITE WINES') {
+                  console.log( 'white wine' );}
+            
+                if  ({{ section.settings.title | json }} == 'La Tienda') {
+                  console.log( 'La Tienda' );}
+            
+                if  ({{ section.settings.title | json }}  == 'New Drops') {
+                    console.log( 'new drops' );}
+            
+                if  ({{ section.settings.title | json }}  == 'Rose Wines') {
+                  console.log( 'Rose Wines' );}
+            
+                if  ({{ section.settings.title | json }}  == 'orange wines') {
+                  console.log( 'orange' );}
+            
+                if  ({{ section.settings.title | json }} == 'Sparkling') {
+                  console.log( 'sparkling' );}
+            
+                if  ({{ section.settings.title | json }}  == 'Cider') { 
+                  console.log( 'cider' );}
+            
+                if  ({{ section.settings.title | json }}  == 'Beers') {
+                  console.log( 'Beers' );}
+              
+                if  ({{ section.settings.title | json }}  == 'Beers') {
+                  console.log( 'Beers' );}
+            
+                if  ({{ section.settings.title | json }}  == 'Spirits') {
+                  console.log( 'Spirits' );}
+                
+              
+              }
+              </script>
+            
+              <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
+                <text y="40">
+                  <textPath id="text-path" href="#text-curve" startOffset="200">
+                    {{ section.settings.title }}
+                  </textPath>
+                </text>
+              </svg> -->
+    {% comment %} end added code. {% endcomment %}
+
+            </h2>
+            {%- if section.settings.description != blank -%}
+              <div class="rte section-header__description section-header__description--large appear-delay-1">
+                {{ section.settings.description }}
               </div>
-            {%- endfor -%}
+            {%- endif -%}
+          </header>
+        </div>
+      {%- endif -%}
 
-          {%- else -%}
+      <div class="overflow-scroll-wrap" data-ajax-loader>
+        <button
+          type="button"
+          class="btn btn--tertiary overflow-scroller__arrow overflow-scroller__arrow--left overflow-scroller--disable-left small--hide"
+          {% unless scrollable %}hidden{% endunless %}
+          aria-hidden="true"
+          aria-label="{{ 'general.pagination.previous' | t }}"
+          data-arrow>
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+        </button>
+        <button
+          type="button"
+          class="btn btn--tertiary overflow-scroller__arrow overflow-scroller__arrow--right small--hide"
+          {% unless scrollable %}hidden{% endunless %}
+          aria-hidden="true"
+          aria-label="{{ 'general.pagination.next' | t }}"
+          data-arrow>
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+        </button>
+        <div
+          class="overflow-scroller"
+          data-pagination-wrapper>
+          <div
+            class="grid grid--uniform grid--scattered-large-2 grid--scattered-small-2"
+            data-aos="overflow__animation"
+            data-product-container>
 
-            {%- for product in collections[section.settings.home_featured_products].products limit: paginate_by -%}
-              {%- render 'product-grid-item'
-                product: product,
-                grid_item_width: grid_item_width
-              -%}
-            {%- endfor -%}
+            {%- if
+              section.settings.home_featured_products == blank
+              or collections[section.settings.home_featured_products].empty?
+              or collections[section.settings.home_featured_products].products_count == 0 -%}
 
-          {%- endif -%}
+              {%- for i in (1..paginate_by) -%}
+                <div class="grid__item grid-product {{ grid_item_width }}{% if settings.product_hover_details %} grid-product__hover-details{% endif %}">
+                  <div class="grid-product__content">
+                    <a href="{{ product.url | within: collection }}" class="grid-product__link {% if sold_out %} grid-product__link--disabled{% endif %}">
+                      <div class="product-slider"
+                        data-image-count="1"
+                        data-id="1234">
+                        <div class="product-slide">
+                          {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                          <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                        </div>
+                      </div>
+                      <div class="grid-product__meta">
+                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                        <div class="grid-product__price">$29</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              {%- endfor -%}
+
+            {%- else -%}
+
+              {%- for product in collections[section.settings.home_featured_products].products limit: paginate_by -%}
+                {%- render 'product-grid-item'
+                  product: product,
+                  grid_item_width: grid_item_width
+                -%}
+              {%- endfor -%}
+
+            {%- endif -%}
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 
-</div>
-
-{% schema %}
-  {
-    "name": "Featured collection",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Heading",
-        "default": "Featured collection"
-      },
-      {
-        "type": "text",
-        "id": "description",
-        "label": "Description"
-      },
-      {
-        "type": "collection",
-        "id": "home_featured_products",
-        "label": "Collection"
-      },
-      {
-        "type": "select",
-        "id": "per_row",
-        "label": "Products per row",
-        "default": "small",
-        "options": [
-          {
-            "value": "small",
-            "label": "3"
-          },
-          {
-            "value": "medium",
-            "label": "4"
-          },
-          {
-            "value": "large",
-            "label": "5"
-          }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "alt",
-        "label": "Use alternate section color"
-      }
-    ],
-    "presets": [{
+  {% schema %}
+    {
       "name": "Featured collection",
-      "category": "Collection"
-    }],
-    "blocks" : []
-  }
-{% endschema %}
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Featured collection"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "collection",
+          "id": "home_featured_products",
+          "label": "Collection"
+        },
+        {
+          "type": "select",
+          "id": "per_row",
+          "label": "Products per row",
+          "default": "small",
+          "options": [
+            {
+              "value": "small",
+              "label": "3"
+            },
+            {
+              "value": "medium",
+              "label": "4"
+            },
+            {
+              "value": "large",
+              "label": "5"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "alt",
+          "label": "Use alternate section color"
+        }
+      ],
+      "presets": [{
+        "name": "Featured collection",
+        "category": "Collection"
+      }],
+      "blocks" : []
+    }
+  {% endschema %}
