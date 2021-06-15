@@ -4,8 +4,8 @@
     "theme_name": "Streamline",
     "theme_author": "Archetype Themes",
     "theme_version": "3.4.5",
-    "theme_documentation_url": "https://archetypethemes.co/blogs/streamline",
-    "theme_support_url": "https://archetypethemes.co/blogs/streamline"
+    "theme_documentation_url": "https:\/\/archetypethemes.co\/blogs\/streamline",
+    "theme_support_url": "https:\/\/archetypethemes.co\/blogs\/streamline"
   },
   {
     "name": "Colors",
@@ -463,7 +463,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Requires variant picker style set to 'Buttons'. [Learn how to set up swatches](https://archetypethemes.co/blogs/streamline/how-do-i-set-up-color-swatches)"
+        "content": "Requires variant picker style set to 'Buttons'. [Learn how to set up swatches](https:\/\/archetypethemes.co\/blogs\/streamline\/how-do-i-set-up-color-swatches)"
       },
       {
         "type": "checkbox",
@@ -481,7 +481,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Show expandable content boxes on your product pages. [Learn more](https://archetypethemes.co/blogs/streamline/how-do-i-add-custom-product-page-tabs)."
+        "content": "Show expandable content boxes on your product pages. [Learn more](https:\/\/archetypethemes.co\/blogs\/streamline\/how-do-i-add-custom-product-page-tabs)."
       },
       {
         "type": "select",
@@ -528,7 +528,7 @@
         "type": "checkbox",
         "id": "product_contact",
         "label": "Show contact form",
-        "info": "All submissions are sent to the customer email address of your store. [Learn more](https://help.shopify.com/en/manual/using-themes/change-the-layout/add-contact-form#view-contact-form-submissions)."
+        "info": "All submissions are sent to the customer email address of your store. [Learn more](https:\/\/help.shopify.com\/en\/manual\/using-themes\/change-the-layout\/add-contact-form#view-contact-form-submissions)."
       },
       {
         "type": "text",
@@ -547,7 +547,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https://apps.shopify.com/product-reviews)."
+        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https:\/\/apps.shopify.com\/product-reviews)."
       },
       {
         "type": "checkbox",
@@ -662,13 +662,13 @@
         "type": "checkbox",
         "id": "inventory_transfers_enable",
         "label": "Show inventory transfer notice",
-        "info": "Learn how to create inventory transfers [here](https://help.shopify.com/en/manual/products/inventory/transfers/create-transfer)"
+        "info": "Learn how to create inventory transfers [here](https:\/\/help.shopify.com\/en\/manual\/products\/inventory\/transfers\/create-transfer)"
       },
       {
         "type": "checkbox",
         "id": "surface_pickup_enable",
         "label": "Enable pickup availability feature",
-        "info": "Learn how to setup this feature [here](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/local-methods/local-pickup)"
+        "info": "Learn how to setup this feature [here](https:\/\/help.shopify.com\/en\/manual\/shipping\/setting-up-and-managing-your-shipping\/local-methods\/local-pickup)"
       },
       {
         "type": "checkbox",
@@ -756,61 +756,61 @@
         "type": "text",
         "id": "social_instagram_link",
         "label": "Instagram",
-        "info": "https://instagram.com/shopify"
+        "info": "https:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_facebook_link",
         "label": "Facebook",
-        "info": "https://www.facebook.com/shopify"
+        "info": "https:\/\/www.facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_twitter_link",
         "label": "Twitter",
-        "info": "https://twitter.com/shopify"
+        "info": "https:\/\/twitter.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_pinterest_link",
         "label": "Pinterest",
-        "info": "https://www.pinterest.com/shopify"
+        "info": "https:\/\/www.pinterest.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_snapchat_link",
         "label": "Snapchat",
-        "info": "https://www.snapchat.com/add/shopify"
+        "info": "https:\/\/www.snapchat.com\/add\/shopify"
       },
       {
         "type": "text",
         "id": "social_tiktok_link",
         "label": "TikTok",
-        "info": "https://www.tiktok.com/@shopify"
+        "info": "https:\/\/www.tiktok.com\/@shopify"
       },
       {
         "type": "text",
         "id": "social_tumblr_link",
         "label": "Tumblr",
-        "info": "http://shopify.tumblr.com"
+        "info": "http:\/\/shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "social_linkedin_link",
         "label": "LinkedIn",
-        "info": "https://www.linkedin.com/in/shopify"
+        "info": "https:\/\/www.linkedin.com\/in\/shopify"
       },
       {
         "type": "text",
         "id": "social_youtube_link",
         "label": "YouTube",
-        "info": "https://www.youtube.com/user/shopify"
+        "info": "https:\/\/www.youtube.com\/user\/shopify"
       },
       {
         "type": "text",
         "id": "social_vimeo_link",
         "label": "Vimeo",
-        "info": "https://vimeo.com/shopify"
+        "info": "https:\/\/vimeo.com\/shopify"
       },
       {
         "type": "header",

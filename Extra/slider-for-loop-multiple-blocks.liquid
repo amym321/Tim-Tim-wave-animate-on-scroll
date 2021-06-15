@@ -55,27 +55,33 @@
             <h2 class="section-header__title appear-delay  ">
 
 
-{% comment %} added code - am {% endcomment %}
+{% comment %} added code. per keyframers.
+adjusting window.addEventListener('scroll',onScroll2) for second title 
+bottom works alone, so second var and methods work. lot of cycling if keep scrolling, but not hung up
+both work but double time cycling when if statements wrapped around html blocks alone. 104 file version on shopify
+no animation if if statements wrapped around  html and script. just title prints
+by cycling, I mean (Console messages of math). not hanging up. maybe hung up before because there was <!-- --> liquid
+{% endcomment %}
 
-            {% style %}
-            .title-Z {
-              z-index: 200000;
-            }
-              @media only screen and (min-width:769px){
-                .view-padding {
-                  padding-right: 25%;
-                  padding-left: 25%;
-                }
-                .wave-header {
-                  font-size: calc(var(--typeHeaderSize)*1.3);
-                }
-              }
-              @media only screen and (max-width:768px){
-                .wave-header {
-                  font-size: calc(var(--typeHeaderSize)*1);
-                }
-              }
-            {% endstyle %}
+{% style %}
+.title-Z {
+  z-index: 200000;
+}
+  @media only screen and (min-width:769px){
+    .view-padding {
+      padding-right: 25%;
+      padding-left: 25%;
+    }
+    .wave-header {
+      font-size: calc(var(--typeHeaderSize)*1.3);
+    }
+  }
+  @media only screen and (max-width:768px){
+    .wave-header {
+      font-size: calc(var(--typeHeaderSize)*1);
+    }
+  }
+{% endstyle %}
 
             <script>
               console.clear();
@@ -89,50 +95,8 @@
               function updateTextPathOffset(offset){
                 textPath.setAttribute('startOffset', offset); 
               }
-              
+
               updateTextPathOffset(pathLength);
-
-
-
-
-              // var viewWidth = screen.width;
-              // var viewHeight = 200;
-
-              // if 
-
-              // function viewboxSize(offset){
-              //   textPath.setAttribute('viewBox', offset); 
-              // }
-
-              // viewboxSize(viewB);
-              var viewWidth = 500;
-              var viewHeight = 800;
-
-          updateViewBox = function(){
-              if (window.screen.width >= 1000) {
-                // viewHeight =  .2 * viewWidth;
-              
-              // var viewB = (0 + 0 + 500 + 300 )
-              // svg.setAttribute('viewBox', '0 0 ' + viewWidth + ' ' + viewHeight);
-              // svg.setAttribute('viewBox', '0 0 500 300');
-              }
-          }
-          updateViewBox ()
-
-          // (viewBx () {
-          //   svg.setAttribute('viewBox', '0 0 500 300');
-          // })();
-
-          // var b = document.querySelector("svg");
-          // b.setAttribute("viewBox", "0 0 500 300");
-
-          function viewBxx () {
-            svg.setAttribute('viewBox', '0 0 500 300');
-          }
-
-
-
-
 
               function onScroll(){
                 requestAnimationFrame(function(){
@@ -147,17 +111,14 @@
             </script>
 
 {% if section.settings.title contains 'NEW DROPS' %}
-           <div style="display: inline;">
-            <!-- <svg id="text-container" viewBox="'50 -20 ${viewWidth} ${viewHeight}'"  xmlns="http://www.w3.org/2000/svg" style="display: inline;"> -->
-            <svg id="text-container"   xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg" >
               <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text x="240">
                 <textPath id="text-path" href="#text-curve" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
               </text>
             </svg>
-          </div>
 {% endif %}
 
             <script>
@@ -188,9 +149,9 @@
             </script>
 
 {% if section.settings.title contains 'RED WINES' %}
-            <svg id="text-container2" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container2" viewBox="0 -20 1000 180"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve2" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text x="240">
                 <textPath id="text-path2" href="#text-curve2" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -218,7 +179,7 @@
                   var rect3 = textContainer3.getBoundingClientRect();
                   var scrollPercent3 = rect3.y / window.innerHeight;
                   console.log(scrollPercent3);
-                  updateTextPathOffset3( -scrollPercent3 * .5 * pathLength3 );
+                  updateTextPathOffset3( scrollPercent3 * 2 * pathLength3 );
                 });
               }
 
@@ -226,9 +187,9 @@
             </script>
 
 {% if section.settings.title contains 'WHITE WINES' %}
-            <svg id="text-container3" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container3" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve3" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text x="240">
                 <textPath id="text-path3" href="#text-curve3" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -256,7 +217,7 @@
                   var rect4 = textContainer4.getBoundingClientRect();
                   var scrollPercent4 = rect4.y / window.innerHeight;
                   console.log(scrollPercent4);
-                  updateTextPathOffset4( -scrollPercent4 * .5 * pathLength4 );
+                  updateTextPathOffset4( scrollPercent4 * 2 * pathLength4 );
                 });
               }
 
@@ -264,9 +225,9 @@
             </script>
 
 {% if section.settings.title contains 'ROSÉ WINES' %}
-            <svg id="text-container4" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container4" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve4" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path4" href="#text-curve4" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -294,7 +255,7 @@
                   var rect5 = textContainer5.getBoundingClientRect();
                   var scrollPercent5 = rect5.y / window.innerHeight;
                   console.log(scrollPercent5);
-                  updateTextPathOffset5( -scrollPercent5 * .5 * pathLength5 );
+                  updateTextPathOffset5( scrollPercent5 * 2 * pathLength5 );
                 });
               }
 
@@ -302,9 +263,9 @@
             </script>
 
 {% if section.settings.title contains 'ORANGE WINES' %}
-            <svg id="text-container5" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container5" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve5" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path5" href="#text-curve5" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -332,7 +293,7 @@
                   var rect6 = textContainer6.getBoundingClientRect();
                   var scrollPercent6 = rect6.y / window.innerHeight;
                   console.log(scrollPercent6);
-                  updateTextPathOffset6( -scrollPercent6 * .5 * pathLength6 );
+                  updateTextPathOffset6( scrollPercent6 * 2 * pathLength6 );
                 });
               }
 
@@ -340,9 +301,9 @@
             </script>
 
 {% if section.settings.title contains 'SPARKLING' %}
-            <svg id="text-container6" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container6" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve6" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path6" href="#text-curve6" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -370,7 +331,7 @@
                   var rect7 = textContainer7.getBoundingClientRect();
                   var scrollPercent7 = rect7.y / window.innerHeight;
                   console.log(scrollPercent7);
-                  updateTextPathOffset7( -scrollPercent7 * .5 * pathLength7 );
+                  updateTextPathOffset7( scrollPercent7 * 2 * pathLength7 );
                 });
               }
 
@@ -378,9 +339,9 @@
             </script>
 
 {% if section.settings.title contains 'CIDER' %}
-            <svg id="text-container7" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container7" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve7" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path7" href="#text-curve7" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -408,7 +369,7 @@
                   var rect8 = textContainer8.getBoundingClientRect();
                   var scrollPercent8 = rect8.y / window.innerHeight;
                   console.log(scrollPercent8);
-                  updateTextPathOffset8( -scrollPercent8 * .5 * pathLength8 );
+                  updateTextPathOffset8( scrollPercent8 * 2 * pathLength8 );
                 });
               }
 
@@ -416,9 +377,9 @@
             </script>
 
 {% if section.settings.title contains 'BEERS' %}
-            <svg id="text-container8" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container8" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve8" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path8" href="#text-curve8" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -446,7 +407,7 @@
                   var rect9 = textContainer9.getBoundingClientRect();
                   var scrollPercent9 = rect9.y / window.innerHeight;
                   console.log(scrollPercent9);
-                  updateTextPathOffset9( -scrollPercent9 * .5 * pathLength9 );
+                  updateTextPathOffset9( scrollPercent9 * 2 * pathLength9 );
                 });
               }
 
@@ -454,9 +415,9 @@
             </script>
 
 {% if section.settings.title contains 'LA TIENDA' %}
-            <svg id="text-container9" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container9" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve9" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path9" href="#text-curve9" startOffset="200">
             {{ section.settings.title }}
                 </textPath>
@@ -484,7 +445,7 @@
                   var rect10 = textContainer10.getBoundingClientRect();
                   var scrollPercent10 = rect10.y / window.innerHeight;
                   console.log(scrollPercent10);
-                  updateTextPathOffset10( -scrollPercent10 * .5 * pathLength10 );
+                  updateTextPathOffset10( scrollPercent10 * 2 * pathLength10 );
                 });
               }
 
@@ -492,9 +453,9 @@
             </script>
 
 {% if section.settings.title contains 'SPIRITS' %}
-            <svg id="text-container10" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
+            <svg id="text-container10" viewBox="0 0 1000 200"  xmlns="http://www.w3.org/2000/svg">
               <path id="text-curve10" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-              <text x="600">
+              <text y="40">
                 <textPath id="text-path10" href="#text-curve10" startOffset="200">
             {{ section.settings.title }}
                 </textPath>

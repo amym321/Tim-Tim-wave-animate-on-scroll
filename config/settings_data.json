@@ -1,1 +1,1626 @@
-{"current":{"color_body_bg":"#eeebdd","color_body_text":"#000000","color_button":"#d81216","color_button_text":"#eeebdd","color_sale_price":"#000000","color_sale_tag":"#d81216","color_sale_tag_text":"#d81216","color_cart_dot":"#000000","color_cart_dot_text":"#eeebdd","color_alt_bg":"#eeebdd","color_alt_text":"#000000","color_announcement":"#000000","color_announcement_text":"#eeebdd","color_newsletter":"#d81216","color_newsletter_text":"#fff","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_image_text":"#eeebdd","color_image_overlay":"#000000","color_image_overlay_opacity":10,"color_image_overlay_text_shadow":40,"color_small_image_bg":"rgba(0,0,0,0)","color_large_image_bg":"#000000","type_header_font_family":"roboto_condensed_i7","type_header_capitalize":true,"type_header_spacing":25,"type_header_base_size":60,"type_header_line_height":0.9,"type_base_font_family":"roboto_condensed_n4","type_product_capitalize":true,"type_base_spacing":25,"type_base_size":18,"type_base_line_height":1.6,"button_type_style":"caps","button_style":"round","type_navigation_size":30,"animate_images":true,"animate_page_transitions":false,"logo_loader_image":"shopify:\/\/shop_images\/Artboard_1_bad73506-ef19-4889-99f1-154126d6cfbf.png","desktop_loader_width":160,"mobile_loader_width":100,"product_hover_details":false,"product_hover_image":true,"product_image_scatter":false,"product_grid_image_size":"square","vendor_enable":false,"product_save_amount":true,"product_save_type":"percent","collection_color_swatches":false,"additional_content_style":"expandable","product_contact":true,"product_contact_show_phone":false,"enable_product_reviews":false,"quick_shop_enable":true,"quick_shop_style":"full","product_image_size":"small","product_image_type":"stacked","product_zoom_enable":false,"product_shipping_callout":"","sku_enable":false,"inventory_enable":false,"inventory_threshold":20,"inventory_transfers_enable":false,"surface_pickup_enable":false,"social_enable":true,"cart_type":"drawer","cart_icon":"bag","cart_additional_buttons":false,"cart_notes_enable":true,"cart_terms_conditions_enable":true,"cart_terms_conditions_link":"shopify:\/\/pages\/terms-and-conditions","social_instagram_link":"https:\/\/instagram.com\/timtim.uk","social_facebook_link":"","social_pinterest_link":"","share_pinterest":true,"favicon":"shopify:\/\/shop_images\/Artboard_1_bad73506-ef19-4889-99f1-154126d6cfbf.png","checkout_logo_image":"shopify:\/\/shop_images\/Logo_111_-_Transparent_Background.png","checkout_logo_position":"center","checkout_logo_size":"large","checkout_body_background_color":"#eeebdd","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#eeebdd","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#d81216","checkout_button_color":"#d81216","checkout_error_color":"#d81216","animate_page_transition_style":"page-logo","checkout_banner_background_color":"#ffffff","checkout_call_to_action_color":"#a26b25","checkout_use_header_image":false,"product_video_style":"muted","reviews_layout":"full","sections":{"header":{"type":"header","settings":{"header_style":"button","main_menu_alignment":"right","sticky_index":true,"sticky_collection":false,"header_search_enable":true,"logo":"shopify:\/\/shop_images\/Logo_-_Horizontal_Red2_f7b278d3-a213-42d8-960d-3a18dfc42bf2.png","logo-inverted":"shopify:\/\/shop_images\/Logo_-_Horizontal_baige.png","desktop_logo_width":350,"mobile_logo_width":200,"logo_hide_mobile":false,"main_menu_link_list":"main-menu","show_announcement":true,"show_announcement_home_only":false,"announcement_text":"10% off your first order"}},"footer":{"type":"footer","settings":{"show_newsletter":true,"newsletter_title":"JOIN THE CLUB☟","newsletter_richtext":"<p>Stay up to date with cool stuff, upcoming events and new products PLUS 10% off your first order! Crazy...<\/p>","show_locale_selector":true,"show_currency_selector":true,"show_currency_flags":true,"show_social_icons":true,"menu":"footer","show_payment_icons":true,"show_copyright":true,"copyright_text":"DELIBAR LTD"}},"collection-template":{"type":"collection-template","settings":{"per_row_desktop":3,"per_row_mobile":"1","description_bottom":false}},"product-template":{"type":"product-template","settings":{"product_image_size":"small","product_image_type":"stacked","product_zoom_enable":false,"enable_video_looping":true,"product_video_style":"muted","enable_payment_button":true,"product_shipping_callout":"","variant_type":"button","variant_labels_enable":true,"sku_enable":false,"inventory_enable":false,"inventory_threshold":10,"inventory_transfers_enable":false,"quantity_enable":true,"surface_pickup_enable":false,"social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_image":true,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"blog-template":{"type":"blog-template","settings":{"layout":"grid","post_limit":9,"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":false,"blog_show_author":false,"blog_show_excerpt":false,"blog_image_size":"wide"}},"product-sections":{"type":"product-sections","blocks":{"505108b8-c0b6-4d32-8dc3-c3ee536f24af":{"type":"background-image-text","settings":{"subtitle":"","title":"GOODIES FOR ALL","text":"<p>Good drinking and good eating were never so easy! Just one click ahead and they will knock knock at your door.<\/p>","button_label":"","image":"shopify:\/\/shop_images\/vineyard-and-mountains.jpg","desktop_size":0,"image_alignment":"center center","color_border":"#d81216","layout":"right"}}},"block_order":["505108b8-c0b6-4d32-8dc3-c3ee536f24af"],"settings":{}},"page-sections-template":{"type":"page-sections-template","blocks":{"1559681273277":{"type":"image-hero","settings":{"title_size":80,"text_align":"vertical-center horizontal-center"}},"1558643031646":{"type":"text-and-image","settings":{"image_width":450,"button_style":"primary","layout":"right"}},"1558643392013":{"type":"map","settings":{}},"1558643431127":{"type":"collection-slider","settings":{"per_row":"large"}},"1558643225272":{"type":"hero-video","settings":{"title":"Keep it short\nand sweet.","title_size":60,"subheading":"Explain your brand in more depth on your product pages","text_align":"vertical-center horizontal-center","section_height":"750px","mobile_height":"100vh"}}},"block_order":["1559681273277","1558643031646","1558643392013","1558643431127","1558643225272"],"settings":{"page_title_enable":false,"page_content_enable":true}},"newsletter-popup":{"type":"newsletter-popup","settings":{"mode":"enabled","popup_seconds":5,"popup_days":2,"popup_title":"LITTLE LULU CLUBHOUSE ☟","popup_text":"<p>Join our mailing list for 10% off your first order<\/p>","enable_newsletter":true,"button_label":""}},"list-collections-template":{"type":"list-collections-template","settings":{"title_enable":true,"display_type":"all","sort":"alphabetical"}},"1559096311192":{"type":"hero-animated","blocks":{"1559097202495":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/package-delivered.jpg","focal_point":"center center"}}},"block_order":["1559097202495"],"settings":{"style":"gif","title":"MONTHLY SUBSCRIPTION","title_size":100,"subheading":"New exciting products (and some treats) every month at your door. Real deal, peeps!","link_text":"SEND ME, PLEASE!","color_accent":"#eeebdd","text_align":"vertical-center horizontal-center","desktop_size":0,"mobile_size":20}},"1559321610782":{"type":"hero-video","settings":{"title":"DISCOVER A NEW WORLD","title_size":100,"subheading":"","link_text":"EXPLORE","link":"shopify:\/\/collections\/all","color_accent":"#eeebdd","text_align":"vertical-bottom horizontal-center","video_url":"https:\/\/cdn.shopify.com\/s\/files\/1\/0568\/6804\/4997\/files\/pexels-kindel-media-8093172.mp4?v=1622238360","section_height":"750px","mobile_height":"400px"}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"product_recommendations_heading":"THINGS YOU'LL LOVE","per_row":"small"}},"1559585995085":{"type":"featured-collection-slider","settings":{"title":"NEW DROPS","description":"The good stuff just one click ahead","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"1559586187853":{"type":"marquee","settings":{"text":"DAMN! FREE DELIVERY OVER £80","text_size":32,"text_spacing":true,"color_scheme":"button","direction":"right","speed":"slow"}},"1559687247066":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/Untitled_Artwork_3.png","image_width":700,"subtitle":"HUMBLE BEGGININGS","title":"THE LATIN TWIST","text":"<p>We are new, we are fresh, we are cool. Here we don't cheers, we <strong>TIM-TIM<\/strong>. We love good food, good drinks and good people. And we welcome all folks because we believe the good stuff are for everyone!<\/p><p>We are independent and we work with independents. Help us to support our amazing local producers!<\/p>","button_label":"MORE ABOUT US","button_style":"primary","layout":"right","alt":false}},"social":{"type":"social","settings":{"enable_home":false,"enable_product":false,"enable_collection":false,"title":"WE ARE SOCIAL","description":"<p>Follow us for new stuff <a href=\"https:\/\/instagram.com\/timtim.uk\" target=\"_blank\" title=\"https:\/\/instagram.com\/timtim.uk\">@timtim.uk<\/a><\/p>"}},"collection-header":{"type":"collection-header","settings":{"collection_image_enable":true,"description_enable":true}},"collection-filters":{"type":"collection-filters","settings":{"filter_type":"dropdown","tags_combine":false,"collection_sort_enable":true}},"16222280683750ee6d":{"type":"featured-collections","blocks":{"162222806820e320cf-3":{"type":"collection","settings":{"collection":"reds","image":"shopify:\/\/shop_images\/woman-drinking-red-wine.jpg","focal_point":"center center"}},"2528d4a5-5eb6-47ee-9fbb-0b86617784fa":{"type":"collection","settings":{"collection":"white","image":"shopify:\/\/shop_images\/womens-fashion-tattoo-holding-glass-of-wine.jpg","focal_point":"center center"}},"607e6e52-ccd2-4d10-88a4-4c8e616dc889":{"type":"collection","settings":{"collection":"orange","image":"shopify:\/\/shop_images\/teste.jpg","focal_point":"center center"}},"00802a1c-52c1-4379-b584-211550ff5922":{"type":"collection","settings":{"collection":"rose","image":"shopify:\/\/shop_images\/rose-wine-on-table.jpg","focal_point":"center center"}},"162222806820e320cf-0":{"type":"collection","settings":{"collection":"we-love-beers","image":"shopify:\/\/shop_images\/hand-holding-a-green-beer-celebrating-st.-patricks-day.jpg","focal_point":"center center"}},"162222806820e320cf-1":{"type":"collection","settings":{"collection":"cider","image":"shopify:\/\/shop_images\/bins-of-apples-at-a-farmer-s-market.jpg","focal_point":"center center"}},"2a4e0287-28f4-4ef4-a5ba-6dd3fd2bf32f":{"type":"collection","settings":{"collection":"spirits","image":"shopify:\/\/shop_images\/pouring-party-drinks.jpg","focal_point":"center center"}},"162222806820e320cf-2":{"type":"collection","settings":{"collection":"deli","image":"shopify:\/\/shop_images\/253493-2121x1414-pizza-party.jpg","focal_point":"center center"}}},"block_order":["162222806820e320cf-3","2528d4a5-5eb6-47ee-9fbb-0b86617784fa","607e6e52-ccd2-4d10-88a4-4c8e616dc889","00802a1c-52c1-4379-b584-211550ff5922","162222806820e320cf-0","162222806820e320cf-1","2a4e0287-28f4-4ef4-a5ba-6dd3fd2bf32f","162222806820e320cf-2"],"settings":{"title":"<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0568\/6804\/4997\/files\/Hand.png?v=1622382434\" width=\"90\" height=\"40\"> EXPLORE","alt":false}},"16222332326b6f2fb3":{"type":"hero-video","settings":{"title":"DRINK LIKE A GIRL","title_size":80,"subheading":"The world is female, folks!","link_text":"GIRLS' FAVOURITE","link":"shopify:\/\/collections\/all","color_accent":"#eeebdd","text_align":"vertical-center horizontal-center","video_url":"https:\/\/cdn.shopify.com\/s\/files\/1\/0568\/6804\/4997\/files\/pexels-yan-krukov-7314755.mp4?v=1622236812","section_height":"100vh","mobile_height":"300px"}},"162228722810886819":{"type":"featured-collection-slider","settings":{"title":"RED WINES","description":"","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"1622287301fc313e81":{"type":"featured-collection-slider","settings":{"title":"WHITE WINES","description":"","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"16222873521559da62":{"type":"featured-collection-slider","settings":{"title":"ROSÉ WINES","description":"","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"1622287411bd5b1afc":{"type":"featured-collection-slider","settings":{"title":"ORANGE WINES","description":"","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"1622288191b179cc9c":{"type":"featured-collection-slider","settings":{"title":"BEERS","description":"","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"password-header":{"type":"password-header","settings":{"logo":"shopify:\/\/shop_images\/Logo_111_-_Transparent_Background.png","desktop_logo_width":200,"mobile_logo_width":140}},"password-content":{"type":"password-content","settings":{"title":"","show_password_message":false,"text":"<p>LAUCHING SOON!<br\/>☞ Be the first to know:<\/p>","newsletter_enable":true,"newsletter_placeholder":"Enter your email","newsletter_button_text":"Submit","show_share_buttons":true,"show_image":true,"image":"shopify:\/\/shop_images\/friends-cheers-with-shot-glasses-in-bar.jpg"}},"1622546799678511d7":{"type":"featured-collection-slider","settings":{"title":"SPIRITS","description":"Explore a handpicked selection of spirits. From Britain & Further afield","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"16225470617534040e":{"type":"featured-collection","settings":{"title":"DELICATESSEN GOODIES","description":"From local producers to hungry bellies","home_featured_products":"","rows":2,"per_row_desktop":4,"per_row_mobile":"1","view_all":true,"alt":false}},"1622547458db452086":{"type":"featured-collection-slider","settings":{"title":"SPARKLING","description":"","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"1622549160b4d29efd":{"type":"featured-collection-slider","settings":{"title":"CIDER","description":"lalalalallaa","home_featured_products":"we-love-beers","per_row":"small","alt":false}},"16225502520be2408c":{"type":"featured-collection-slider","settings":{"title":"LA TIENDA","description":"","home_featured_products":"","per_row":"small","alt":false}}},"content_for_index":["1559321610782","1559586187853","16222280683750ee6d","1559585995085","162228722810886819","1622287301fc313e81","16222873521559da62","1622287411bd5b1afc","1622547458db452086","1622549160b4d29efd","1622288191b179cc9c","1622546799678511d7","16225470617534040e","16225502520be2408c","1559096311192","1559687247066","16222332326b6f2fb3"]},"presets":{"Core":{"animate_images":true,"animate_page_transition_style":"page-logo","button_style":"round","button_type_style":"normal","cart_type":"sticky","checkout_accent_color":"#111111","checkout_banner_background_color":"#ffffff","checkout_body_background_color":"#ffffff","checkout_body_font":"Helvetica Neue","checkout_button_color":"#111111","checkout_call_to_action_color":"#a26b25","checkout_error_color":"#ff6d6d","checkout_heading_font":"Helvetica Neue","checkout_input_background_color_mode":"white","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_sidebar_background_color":"#fafafa","checkout_use_header_image":false,"color_alt_bg":"#f9f9f9","color_alt_text":"#000000","color_announcement":"#000000","color_announcement_text":"#ffffff","color_body_bg":"#ffffff","color_body_text":"#000000","color_button":"#000000","color_button_text":"#ffffff","color_cart_dot":"#f75d44","color_cart_dot_text":"#ffffff","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_image_overlay":"#000000","color_image_overlay_opacity":10,"color_image_overlay_text_shadow":20,"color_image_text":"#ffffff","color_large_image_bg":"#000000","color_newsletter":"#000000","color_newsletter_text":"#fff","color_sale_price":"#000000","color_sale_tag":"#990000","color_small_image_bg":"#ffffff","desktop_loader_width":100,"mobile_loader_width":100,"product_grid_image_size":"natural","product_hover_details":false,"product_hover_image":true,"product_image_scatter":false,"product_video_style":"muted","reviews_layout":"full","social_facebook_link":"https:\/\/www.facebook.com\/shopify","social_instagram_link":"https:\/\/instagram.com\/shopify","social_pinterest_link":"https:\/\/www.pinterest.com\/shopify","type_base_font_family":"roboto_condensed_n4","type_base_line_height":1.6,"type_base_size":18,"type_base_spacing":"25","type_header_base_size":46,"type_header_capitalize":true,"type_header_font_family":"roboto_condensed_i7","type_header_line_height":1,"type_header_spacing":"-25","type_product_capitalize":false,"sections":{"header":{"type":"header","settings":{"sticky_index":true,"sticky_collection":false,"header_search_enable":true,"show_announcement":false,"show_announcement_home_only":false}},"footer":{"type":"footer","settings":{"show_newsletter":true,"show_social_icons":true,"menu":"footer","newsletter_title":"Join the club","newsletter_richtext":"","show_payment_icons":false,"show_copyright":false}},"collection-template":{"type":"collection-template","settings":{"per_row_desktop":3}},"product-template":{"type":"product-template","settings":{}},"article-template":{"type":"article-template","settings":{"blog_show_image":true,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false}},"product-sections":{"type":"product-sections","blocks":{"product-text-columns":{"type":"text-columns","settings":{"title":"Why choose us?","align_text":"center","alt":true,"enable_image_1":false,"image_width_1":650,"title_1":"Reason one","text_1":"<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>","enable_image_2":false,"image_width_2":650,"title_2":"Reason two","text_2":"<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>","enable_image_3":false,"image_width_3":650,"title_3":"","text_3":""}},"product-text-and-image":{"type":"text-and-image","settings":{"image_width":700,"text":"<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>","button_style":"primary","layout":"right"}},"product-background-image-text":{"type":"background-image-text","settings":{"layout":"right"}}},"block_order":["product-text-columns","product-text-and-image","product-background-image-text"],"settings":{}},"page-sections-template":{"type":"page-sections-template","blocks":{"1559681273277":{"type":"image-hero","settings":{"title_size":80,"text_align":"vertical-center horizontal-center"}},"1558643031646":{"type":"text-and-image","settings":{"image_width":450,"button_style":"primary","layout":"right"}},"1558643392013":{"type":"map","settings":{}},"1558643431127":{"type":"collection-slider","settings":{"per_row":"large"}},"1558643225272":{"type":"hero-video","settings":{"title":"Keep it short\nand sweet.","title_size":60,"subheading":"Explain your brand in more depth on your product pages","text_align":"vertical-center horizontal-center","section_height":"750px","mobile_height":"100vh"}}},"block_order":["1559681273277","1558643031646","1558643392013","1558643431127","1558643225272"],"settings":{"page_title_enable":false,"page_content_enable":true}},"newsletter-popup":{"type":"newsletter-popup","settings":{"mode":"disabled","popup_seconds":5,"popup_days":30,"enable_newsletter":true}},"1543003878234":{"type":"featured-collections","blocks":{"1543003878234-0":{"type":"collection","settings":{}},"1543003878234-1":{"type":"collection","settings":{}},"1543003878234-2":{"type":"collection","settings":{}},"1543003878234-3":{"type":"collection","settings":{}}},"block_order":["1543003878234-0","1543003878234-1","1543003878234-2","1543003878234-3"],"settings":{"alt":true,"title":"Shop all"}},"list-collections-template":{"type":"list-collections-template","settings":{}},"1556162802939":{"type":"featured-collection","settings":{"per_row_desktop":4,"per_row_mobile":"2","description":"For more traditional layouts"}},"1556162914490":{"type":"featured-collection-slider","settings":{"description":"With infinite scrolling"}},"1558626745581":{"type":"featured-content","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true}},"1559096311192":{"type":"hero-animated","blocks":{"1559096311192-0":{"type":"image","settings":{}},"1559097202495":{"type":"image","settings":{}}},"block_order":["1559096311192-0","1559097202495"],"settings":{"style":"gif","title":"Make an impression","title_size":80,"text_align":"vertical-center horizontal-center"}},"1559098181700":{"type":"slideshow","blocks":{"1559098181700-0":{"type":"image","settings":{"title_size":80,"text_align":"vertical-bottom horizontal-left"}}},"block_order":["1559098181700-0"],"settings":{}},"1559321610782":{"type":"hero-video","settings":{"title":"Keep it short\nand sweet.","title_size":80,"subheading":"Explain your brand in more depth on your product pages","text_align":"vertical-bottom horizontal-center","section_height":"750px","mobile_height":"100vh"}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true}},"1559585995085":{"type":"featured-collection-slider","settings":{"description":"With infinite scrolling"}},"1559586187853":{"type":"marquee","settings":{"text":"Follow us for monthly apparel giveaways","text_size":36}},"1559687247066":{"type":"text-and-image","settings":{"image_width":700,"button_label":"Our story","button_style":"secondary","layout":"right"}},"1559687361077":{"type":"text-and-image","settings":{"image_width":700,"button_label":"Contact us","button_style":"secondary","layout":"left"}},"1559687710135":{"type":"map","settings":{}}},"content_for_index":["1559321610782","1559585995085","1558626745581","1559096311192","1556162914490","1559098181700","1556162802939","1543003878234","1559687247066","1559687361077","1559687710135","1559586187853"]},"Luxe":{"animate_images":true,"animate_page_transition_style":"page-logo","button_style":"shadow","cart_type":"sticky","checkout_accent_color":"#111111","checkout_banner_background_color":"#ffffff","checkout_body_background_color":"#ffffff","checkout_body_font":"Helvetica Neue","checkout_button_color":"#111111","checkout_call_to_action_color":"#a26b25","checkout_error_color":"#ff6d6d","checkout_heading_font":"Helvetica Neue","checkout_input_background_color_mode":"white","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_sidebar_background_color":"#fafafa","checkout_use_header_image":false,"color_alt_bg":"#ffffff","color_alt_text":"#333029","color_announcement":"#c67066","color_announcement_text":"#ffffff","color_body_bg":"#fdfbfa","color_body_text":"#333029","color_button":"#c67066","color_button_text":"#ffffff","color_cart_dot":"#c67066","color_drawer_background":"#fdf9f5","color_drawer_text":"#333029","color_image_bg":"#000000","color_image_overlay":"#000000","color_image_overlay_opacity":10,"color_image_text":"#ffffff","color_large_image_bg":"#eee5e0","color_newsletter":"#c67066","color_newsletter_text":"#ffffff","color_sale_price":"#333029","color_sale_tag":"#c67066","color_small_image_bg":"#fdfbfa","desktop_loader_width":140,"mobile_loader_width":130,"product_grid_image_size":"natural","product_hover_details":true,"product_hover_image":true,"product_image_scatter":false,"product_video_style":"muted","reviews_layout":"full","social_facebook_link":"https:\/\/www.facebook.com\/shopify","social_instagram_link":"https:\/\/instagram.com\/shopify","social_pinterest_link":"https:\/\/www.pinterest.com\/shopify","type_base_font_family":"futura_n4","type_base_line_height":1.7,"type_base_size":18,"type_base_spacing":"25","type_header_base_size":50,"type_header_capitalize":false,"type_header_font_family":"itc_novarese_n5","type_header_line_height":1.1,"type_header_spacing":"0","type_product_capitalize":false,"sections":{"header":{"type":"header","settings":{"sticky_index":true,"sticky_collection":true,"header_search_enable":true,"show_announcement":true,"show_announcement_home_only":false}},"footer":{"type":"footer","settings":{"show_newsletter":true,"show_social_icons":true,"show_payment_icons":false,"show_copyright":false}},"collection-template":{"type":"collection-template","settings":{"per_row_desktop":3}},"product-template":{"type":"product-template","settings":{}},"article-template":{"type":"article-template","settings":{"blog_show_image":false,"blog_show_tags":true,"blog_show_date":false,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":false}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":false,"blog_show_comments":true,"blog_show_author":false}},"product-sections":{"type":"product-sections","blocks":{"product-text-columns":{"type":"text-columns","settings":{"title":"Why choose us?","align_text":"center","alt":true,"enable_image_1":false,"image_width_1":650,"title_1":"Reason one","text_1":"<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>","enable_image_2":false,"image_width_2":650,"title_2":"Reason two","text_2":"<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>","enable_image_3":false,"image_width_3":650,"title_3":"","text_3":""}},"product-text-and-image":{"type":"text-and-image","settings":{"image_width":700,"text":"<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>","button_style":"primary","layout":"right"}},"product-background-image-text":{"type":"background-image-text","settings":{"layout":"right"}}},"block_order":["product-text-columns","product-text-and-image","product-background-image-text"],"settings":{}},"page-sections-template":{"type":"page-sections-template","blocks":{"1558643031646":{"type":"text-and-image","settings":{"image_width":400,"button_style":"primary","layout":"right"}},"1558643225272":{"type":"hero-video","settings":{"title":"Keep it short\nand sweet.","title_size":47,"subheading":"Explain your brand in more depth on your product pages","text_align":"vertical-center horizontal-center","section_height":"750px","mobile_height":"100vh"}},"1558643431127":{"type":"collection-slider","settings":{"per_row":"small"}},"1558643392013":{"type":"map","settings":{}}},"block_order":["1558643031646","1558643225272","1558643431127","1558643392013"],"settings":{"page_title_enable":true,"page_content_enable":true}},"newsletter-popup":{"type":"newsletter-popup","settings":{"mode":"disabled","popup_seconds":5,"popup_days":30,"enable_newsletter":true}},"list-collections-template":{"type":"list-collections-template","settings":{"title_enable":true,"display_type":"all"}},"1555097143929":{"type":"text-and-image","settings":{"image_width":700,"button_style":"btn","layout":"right"}},"1555439851826":{"type":"background-image-text","settings":{"color_border":"#4f1c3a","layout":"right"}},"1556162802939":{"type":"featured-collection-slider","settings":{}},"1556162914490":{"type":"featured-collection-slider","settings":{}},"1558625522348":{"type":"background-image-text","settings":{"color_border":"#4f1c3a","layout":"left"}},"1558626497917":{"type":"hero-video","settings":{"title":"Keep it short\nand sweet.","title_size":80,"subheading":"Explain your brand in more depth on your product pages","text_align":"vertical-center horizontal-center","section_height":"750px","mobile_height":"100vh"}},"1558626745581":{"type":"featured-content","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true}},"1559155590855":{"type":"text-columns","blocks":{"1559155590855-0":{"type":"text_block","settings":{"enable_image":false,"title":"Reason one"}},"1559155590855-1":{"type":"text_block","settings":{"enable_image":false,"title":"Reason two"}}},"block_order":["1559155590855-0","1559155590855-1"],"settings":{"title":"Why choose us?","align_text":"center","alt":true}},"password-header":{"type":"password-header","settings":{}},"password-content":{"type":"password-content","settings":{"newsletter_enable":true,"show_share_buttons":false,"show_image":true}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"per_row":"small"}}},"content_for_index":["1558626497917","1556162914490","1558626745581","1555097143929","1555439851826","1559155590855","1556162802939","1558625522348"]},"Hype":{"animate_images":false,"animate_page_transition_style":"page-logo","button_style":"shadow","cart_type":"sticky","checkout_accent_color":"#111111","checkout_body_background_color":"#ffffff","checkout_body_font":"Helvetica Neue","checkout_button_color":"#111111","checkout_error_color":"#ff6d6d","checkout_heading_font":"Helvetica Neue","checkout_input_background_color_mode":"white","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_sidebar_background_color":"#fafafa","color_alt_bg":"#000000","color_alt_text":"#ffffff","color_announcement":"#000000","color_announcement_text":"#ffffff","color_body_bg":"#ffffff","color_cart_dot":"#FF2300","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_image_bg":"#000000","color_image_overlay":"#000000","color_image_overlay_opacity":10,"color_image_text":"#ffffff","color_large_image_bg":"#000000","color_newsletter":"#000000","color_newsletter_text":"#ffffff","color_small_image_bg":"#f2f2f2","desktop_loader_width":190,"mobile_loader_width":180,"product_grid_image_size":"natural","product_hover_details":false,"product_hover_image":true,"product_image_scatter":true,"product_video_style":"muted","reviews_layout":"full","social_facebook_link":"https:\/\/www.facebook.com\/shopify","social_instagram_link":"https:\/\/instagram.com\/shopify","social_pinterest_link":"https:\/\/www.pinterest.com\/shopify","type_base_font_family":"basic_commercial_n7","type_base_line_height":1.3,"type_base_size":20,"type_base_spacing":"25","type_header_base_size":48,"type_header_capitalize":true,"type_header_font_family":"basic_commercial_n7","type_header_line_height":0.9,"type_header_spacing":"25","type_product_capitalize":true,"sections":{"header":{"type":"header","settings":{"sticky_index":true,"sticky_collection":true,"header_search_enable":true,"show_announcement":false}},"footer":{"type":"footer","settings":{"show_newsletter":false}},"collection-template":{"type":"collection-template","settings":{"per_row_desktop":3}},"product-template":{"type":"product-template","settings":{}},"article-template":{"type":"article-template","settings":{"blog_show_image":true,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false}},"product-sections":{"type":"product-sections","blocks":{"product-text-columns":{"type":"text-columns","settings":{"title":"Why choose us?","align_text":"center","alt":true,"enable_image_1":false,"image_width_1":650,"title_1":"Reason one","text_1":"<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>","enable_image_2":false,"image_width_2":650,"title_2":"Reason two","text_2":"<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>","enable_image_3":false,"image_width_3":650,"title_3":"","text_3":""}},"product-text-and-image":{"type":"text-and-image","settings":{"image_width":700,"text":"<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>","button_style":"primary","layout":"right"}},"product-background-image-text":{"type":"background-image-text","settings":{"layout":"right"}}},"block_order":["product-text-columns","product-text-and-image","product-background-image-text"],"settings":{}},"page-sections-template":{"type":"page-sections-template","blocks":{"1558643031646":{"type":"text-and-image","settings":{"image_width":400,"button_style":"primary","layout":"right"}},"1558643431127":{"type":"collection-slider","settings":{"per_row":"small"}}},"block_order":["1558643031646","1558643431127"],"settings":{"page_title_enable":true,"page_content_enable":true}},"newsletter-popup":{"type":"newsletter-popup","settings":{"mode":"disabled","popup_seconds":5,"popup_days":30,"enable_newsletter":true}},"list-collections-template":{"type":"list-collections-template","settings":{}},"1555097143929":{"type":"text-and-image","settings":{}},"1556162802939":{"type":"featured-collection-slider","settings":{}},"1556162914490":{"type":"featured-collection-slider","settings":{}},"1559240039950":{"type":"hero-animated","blocks":{"1559240039950-0":{"type":"image","settings":{}},"1559240039950-1":{"type":"image","settings":{}},"1559309176406":{"type":"image","settings":{}}},"block_order":["1559240039950-0","1559240039950-1","1559309176406"],"settings":{"style":"gif","title_size":72,"text_align":"vertical-bottom horizontal-right"}},"1559241610369":{"type":"marquee","settings":{"text":"☞ FREE SHIPPING AND RETURNS","text_size":70,"text_spacing":true,"color_scheme":"text","direction":"left"}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"per_row":"large"}},"1559249041610":{"type":"hero-video","settings":{"title":"Keep it short\nand sweet.","title_size":80,"subheading":"Explain your brand in more depth on your product pages","text_align":"vertical-bottom horizontal-left","section_height":"750px","mobile_height":"100vh"}}},"content_for_index":["1559240039950","1555097143929","1559241610369","1556162914490","1559249041610","1556162802939"]}}}
+{
+  "current": {
+    "color_body_bg": "#eeebdd",
+    "color_body_text": "#000000",
+    "color_button": "#d81216",
+    "color_button_text": "#eeebdd",
+    "color_sale_price": "#000000",
+    "color_sale_tag": "#d81216",
+    "color_sale_tag_text": "#d81216",
+    "color_cart_dot": "#000000",
+    "color_cart_dot_text": "#eeebdd",
+    "color_alt_bg": "#eeebdd",
+    "color_alt_text": "#000000",
+    "color_announcement": "#000000",
+    "color_announcement_text": "#eeebdd",
+    "color_newsletter": "#d81216",
+    "color_newsletter_text": "#fff",
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#000000",
+    "color_image_text": "#eeebdd",
+    "color_image_overlay": "#000000",
+    "color_image_overlay_opacity": 10,
+    "color_image_overlay_text_shadow": 40,
+    "color_small_image_bg": "rgba(0,0,0,0)",
+    "color_large_image_bg": "#000000",
+    "type_header_font_family": "roboto_condensed_i7",
+    "type_header_capitalize": true,
+    "type_header_spacing": 25,
+    "type_header_base_size": 60,
+    "type_header_line_height": 0.9,
+    "type_base_font_family": "roboto_condensed_n4",
+    "type_product_capitalize": true,
+    "type_base_spacing": 25,
+    "type_base_size": 18,
+    "type_base_line_height": 1.6,
+    "button_type_style": "caps",
+    "button_style": "round",
+    "type_navigation_size": 30,
+    "animate_images": true,
+    "animate_page_transitions": false,
+    "logo_loader_image": "shopify:\/\/shop_images\/Artboard_1_bad73506-ef19-4889-99f1-154126d6cfbf.png",
+    "desktop_loader_width": 160,
+    "mobile_loader_width": 100,
+    "product_hover_details": false,
+    "product_hover_image": true,
+    "product_image_scatter": false,
+    "product_grid_image_size": "square",
+    "vendor_enable": false,
+    "product_save_amount": true,
+    "product_save_type": "percent",
+    "collection_color_swatches": false,
+    "additional_content_style": "expandable",
+    "product_contact": true,
+    "product_contact_show_phone": false,
+    "enable_product_reviews": false,
+    "quick_shop_enable": true,
+    "quick_shop_style": "full",
+    "product_image_size": "small",
+    "product_image_type": "stacked",
+    "product_zoom_enable": false,
+    "product_shipping_callout": "",
+    "sku_enable": false,
+    "inventory_enable": false,
+    "inventory_threshold": 20,
+    "inventory_transfers_enable": false,
+    "surface_pickup_enable": false,
+    "social_enable": true,
+    "cart_type": "drawer",
+    "cart_icon": "bag",
+    "cart_additional_buttons": false,
+    "cart_notes_enable": true,
+    "cart_terms_conditions_enable": true,
+    "cart_terms_conditions_link": "shopify:\/\/pages\/terms-and-conditions",
+    "social_instagram_link": "https:\/\/instagram.com\/timtim.uk",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/Artboard_1_bad73506-ef19-4889-99f1-154126d6cfbf.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_111_-_Transparent_Background.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#eeebdd",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#eeebdd",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#d81216",
+    "checkout_button_color": "#d81216",
+    "checkout_error_color": "#d81216",
+    "animate_page_transition_style": "page-logo",
+    "checkout_banner_background_color": "#ffffff",
+    "checkout_call_to_action_color": "#a26b25",
+    "checkout_use_header_image": false,
+    "product_video_style": "muted",
+    "reviews_layout": "full",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_style": "button",
+          "main_menu_alignment": "right",
+          "sticky_index": true,
+          "sticky_collection": false,
+          "header_search_enable": true,
+          "logo": "shopify:\/\/shop_images\/Logo_-_Horizontal_Red2_f7b278d3-a213-42d8-960d-3a18dfc42bf2.png",
+          "logo-inverted": "shopify:\/\/shop_images\/Logo_-_Horizontal_baige.png",
+          "desktop_logo_width": 350,
+          "mobile_logo_width": 200,
+          "logo_hide_mobile": false,
+          "main_menu_link_list": "main-menu",
+          "show_announcement": true,
+          "show_announcement_home_only": false,
+          "announcement_text": "10% off your first order"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_newsletter": true,
+          "newsletter_title": "JOIN THE CLUB☟",
+          "newsletter_richtext": "<p>Stay up to date with cool stuff, upcoming events and new products PLUS 10% off your first order! Crazy...<\/p>",
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_currency_flags": true,
+          "show_social_icons": true,
+          "menu": "footer",
+          "show_payment_icons": true,
+          "show_copyright": true,
+          "copyright_text": "DELIBAR LTD"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "per_row_desktop": 3,
+          "per_row_mobile": "1",
+          "description_bottom": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_image_size": "small",
+          "product_image_type": "stacked",
+          "product_zoom_enable": false,
+          "enable_video_looping": true,
+          "product_video_style": "muted",
+          "enable_payment_button": true,
+          "product_shipping_callout": "",
+          "variant_type": "button",
+          "variant_labels_enable": true,
+          "sku_enable": false,
+          "inventory_enable": false,
+          "inventory_threshold": 10,
+          "inventory_transfers_enable": false,
+          "quantity_enable": true,
+          "surface_pickup_enable": false,
+          "social_enable": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_image": true,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "social_sharing_blog": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "post_limit": 9,
+          "blog_show_tag_filter": true,
+          "blog_show_rss": false,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": false,
+          "blog_show_author": false,
+          "blog_show_excerpt": false,
+          "blog_image_size": "wide"
+        }
+      },
+      "product-sections": {
+        "type": "product-sections",
+        "blocks": {
+          "505108b8-c0b6-4d32-8dc3-c3ee536f24af": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "GOODIES FOR ALL",
+              "text": "<p>Good drinking and good eating were never so easy! Just one click ahead and they will knock knock at your door.<\/p>",
+              "button_label": "",
+              "image": "shopify:\/\/shop_images\/vineyard-and-mountains.jpg",
+              "desktop_size": 0,
+              "image_alignment": "center center",
+              "color_border": "#d81216",
+              "layout": "right"
+            }
+          }
+        },
+        "block_order": [
+          "505108b8-c0b6-4d32-8dc3-c3ee536f24af"
+        ],
+        "settings": {}
+      },
+      "page-sections-template": {
+        "type": "page-sections-template",
+        "blocks": {
+          "1559681273277": {
+            "type": "image-hero",
+            "settings": {
+              "title_size": 80,
+              "text_align": "vertical-center horizontal-center"
+            }
+          },
+          "1558643031646": {
+            "type": "text-and-image",
+            "settings": {
+              "image_width": 450,
+              "button_style": "primary",
+              "layout": "right"
+            }
+          },
+          "1558643392013": {
+            "type": "map",
+            "settings": {}
+          },
+          "1558643431127": {
+            "type": "collection-slider",
+            "settings": {
+              "per_row": "large"
+            }
+          },
+          "1558643225272": {
+            "type": "hero-video",
+            "settings": {
+              "title": "Keep it short\nand sweet.",
+              "title_size": 60,
+              "subheading": "Explain your brand in more depth on your product pages",
+              "text_align": "vertical-center horizontal-center",
+              "section_height": "750px",
+              "mobile_height": "100vh"
+            }
+          }
+        },
+        "block_order": [
+          "1559681273277",
+          "1558643031646",
+          "1558643392013",
+          "1558643431127",
+          "1558643225272"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": true
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "enabled",
+          "popup_seconds": 5,
+          "popup_days": 2,
+          "popup_title": "LITTLE LULU CLUBHOUSE ☟",
+          "popup_text": "<p>Join our mailing list for 10% off your first order<\/p>",
+          "enable_newsletter": true,
+          "button_label": ""
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "title_enable": true,
+          "display_type": "all",
+          "sort": "alphabetical"
+        }
+      },
+      "1559096311192": {
+        "type": "hero-animated",
+        "blocks": {
+          "1559097202495": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/package-delivered.jpg",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "1559097202495"
+        ],
+        "settings": {
+          "style": "gif",
+          "title": "MONTHLY SUBSCRIPTION",
+          "title_size": 100,
+          "subheading": "New exciting products (and some treats) every month at your door. Real deal, peeps!",
+          "link_text": "SEND ME, PLEASE!",
+          "color_accent": "#eeebdd",
+          "text_align": "vertical-center horizontal-center",
+          "desktop_size": 0,
+          "mobile_size": 20
+        }
+      },
+      "1559321610782": {
+        "type": "hero-video",
+        "settings": {
+          "title": "DISCOVER A NEW WORLD",
+          "title_size": 100,
+          "subheading": "",
+          "link_text": "EXPLORE",
+          "link": "shopify:\/\/collections\/all",
+          "color_accent": "#eeebdd",
+          "text_align": "vertical-bottom horizontal-center",
+          "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0568\/6804\/4997\/files\/pexels-kindel-media-8093172.mp4?v=1622238360",
+          "section_height": "750px",
+          "mobile_height": "400px"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "THINGS YOU'LL LOVE",
+          "per_row": "small"
+        }
+      },
+      "1559585995085": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "NEW DROPS",
+          "description": "The good stuff just one click ahead",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "1559586187853": {
+        "type": "marquee",
+        "settings": {
+          "text": "DAMN! FREE DELIVERY OVER £80",
+          "text_size": 32,
+          "text_spacing": true,
+          "color_scheme": "button",
+          "direction": "right",
+          "speed": "slow"
+        }
+      },
+      "1559687247066": {
+        "type": "text-and-image",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Untitled_Artwork_3.png",
+          "image_width": 700,
+          "subtitle": "HUMBLE BEGGININGS",
+          "title": "THE LATIN TWIST",
+          "text": "<p>We are new, we are fresh, we are cool. Here we don't cheers, we <strong>TIM-TIM<\/strong>. We love good food, good drinks and good people. And we welcome all folks because we believe the good stuff are for everyone!<\/p><p>We are independent and we work with independents. Help us to support our amazing local producers!<\/p>",
+          "button_label": "MORE ABOUT US",
+          "button_style": "primary",
+          "layout": "right",
+          "alt": false
+        }
+      },
+      "social": {
+        "type": "social",
+        "settings": {
+          "enable_home": false,
+          "enable_product": false,
+          "enable_collection": false,
+          "title": "WE ARE SOCIAL",
+          "description": "<p>Follow us for new stuff <a href=\"https:\/\/instagram.com\/timtim.uk\" target=\"_blank\" title=\"https:\/\/instagram.com\/timtim.uk\">@timtim.uk<\/a><\/p>"
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "collection_image_enable": true,
+          "description_enable": true
+        }
+      },
+      "collection-filters": {
+        "type": "collection-filters",
+        "settings": {
+          "filter_type": "dropdown",
+          "tags_combine": false,
+          "collection_sort_enable": true
+        }
+      },
+      "16222280683750ee6d": {
+        "type": "featured-collections",
+        "blocks": {
+          "162222806820e320cf-3": {
+            "type": "collection",
+            "settings": {
+              "collection": "reds",
+              "image": "shopify:\/\/shop_images\/woman-drinking-red-wine.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "2528d4a5-5eb6-47ee-9fbb-0b86617784fa": {
+            "type": "collection",
+            "settings": {
+              "collection": "white",
+              "image": "shopify:\/\/shop_images\/womens-fashion-tattoo-holding-glass-of-wine.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "607e6e52-ccd2-4d10-88a4-4c8e616dc889": {
+            "type": "collection",
+            "settings": {
+              "collection": "orange",
+              "image": "shopify:\/\/shop_images\/teste.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "00802a1c-52c1-4379-b584-211550ff5922": {
+            "type": "collection",
+            "settings": {
+              "collection": "rose",
+              "image": "shopify:\/\/shop_images\/rose-wine-on-table.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "162222806820e320cf-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "we-love-beers",
+              "image": "shopify:\/\/shop_images\/hand-holding-a-green-beer-celebrating-st.-patricks-day.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "162222806820e320cf-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "cider",
+              "image": "shopify:\/\/shop_images\/bins-of-apples-at-a-farmer-s-market.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "2a4e0287-28f4-4ef4-a5ba-6dd3fd2bf32f": {
+            "type": "collection",
+            "settings": {
+              "collection": "spirits",
+              "image": "shopify:\/\/shop_images\/pouring-party-drinks.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "162222806820e320cf-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "deli",
+              "image": "shopify:\/\/shop_images\/253493-2121x1414-pizza-party.jpg",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "162222806820e320cf-3",
+          "2528d4a5-5eb6-47ee-9fbb-0b86617784fa",
+          "607e6e52-ccd2-4d10-88a4-4c8e616dc889",
+          "00802a1c-52c1-4379-b584-211550ff5922",
+          "162222806820e320cf-0",
+          "162222806820e320cf-1",
+          "2a4e0287-28f4-4ef4-a5ba-6dd3fd2bf32f",
+          "162222806820e320cf-2"
+        ],
+        "settings": {
+          "title": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0568\/6804\/4997\/files\/Hand.png?v=1622382434\" width=\"90\" height=\"40\"> EXPLORE",
+          "alt": false
+        }
+      },
+      "16222332326b6f2fb3": {
+        "type": "hero-video",
+        "settings": {
+          "title": "DRINK LIKE A GIRL",
+          "title_size": 80,
+          "subheading": "The world is female, folks!",
+          "link_text": "GIRLS' FAVOURITE",
+          "link": "shopify:\/\/collections\/all",
+          "color_accent": "#eeebdd",
+          "text_align": "vertical-center horizontal-center",
+          "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0568\/6804\/4997\/files\/pexels-yan-krukov-7314755.mp4?v=1622236812",
+          "section_height": "100vh",
+          "mobile_height": "300px"
+        }
+      },
+      "162228722810886819": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "RED WINES",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "1622287301fc313e81": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "WHITE WINES",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "16222873521559da62": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "ROSÉ WINES",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "1622287411bd5b1afc": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "ORANGE WINES",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "1622288191b179cc9c": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "BEERS",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Logo_111_-_Transparent_Background.png",
+          "desktop_logo_width": 200,
+          "mobile_logo_width": 140
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "title": "",
+          "show_password_message": false,
+          "text": "<p>LAUCHING SOON!<br\/>☞ Be the first to know:<\/p>",
+          "newsletter_enable": true,
+          "newsletter_placeholder": "Enter your email",
+          "newsletter_button_text": "Submit",
+          "show_share_buttons": true,
+          "show_image": true,
+          "image": "shopify:\/\/shop_images\/friends-cheers-with-shot-glasses-in-bar.jpg"
+        }
+      },
+      "1622546799678511d7": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "SPIRITS",
+          "description": "Explore a handpicked selection of spirits. From Britain & Further afield",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "16225470617534040e": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "DELICATESSEN GOODIES",
+          "description": "From local producers to hungry bellies",
+          "home_featured_products": "",
+          "rows": 2,
+          "per_row_desktop": 4,
+          "per_row_mobile": "1",
+          "view_all": true,
+          "alt": false
+        }
+      },
+      "1622547458db452086": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "SPARKLING",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "1622549160b4d29efd": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "CIDER",
+          "description": "lalalalallaa",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "16225502520be2408c": {
+        "type": "featured-collection-slider",
+        "settings": {
+          "title": "LA TIENDA",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      },
+      "1623254319fc22bafd": {
+        "type": "featured-collection-slider",
+        "disabled": true,
+        "settings": {
+          "title": "LAST",
+          "description": "",
+          "home_featured_products": "we-love-beers",
+          "per_row": "small",
+          "alt": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1559321610782",
+      "1559586187853",
+      "16222280683750ee6d",
+      "1559585995085",
+      "162228722810886819",
+      "1622287301fc313e81",
+      "16222873521559da62",
+      "1622287411bd5b1afc",
+      "1622547458db452086",
+      "1622549160b4d29efd",
+      "1622288191b179cc9c",
+      "1622546799678511d7",
+      "16225470617534040e",
+      "16225502520be2408c",
+      "1559096311192",
+      "1559687247066",
+      "1623254319fc22bafd",
+      "16222332326b6f2fb3"
+    ]
+  },
+  "presets": {
+    "Core": {
+      "animate_images": true,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "round",
+      "button_type_style": "normal",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_use_header_image": false,
+      "color_alt_bg": "#f9f9f9",
+      "color_alt_text": "#000000",
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_button": "#000000",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#f75d44",
+      "color_cart_dot_text": "#ffffff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_overlay_text_shadow": 20,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#000000",
+      "color_newsletter": "#000000",
+      "color_newsletter_text": "#fff",
+      "color_sale_price": "#000000",
+      "color_sale_tag": "#990000",
+      "color_small_image_bg": "#ffffff",
+      "desktop_loader_width": 100,
+      "mobile_loader_width": 100,
+      "product_grid_image_size": "natural",
+      "product_hover_details": false,
+      "product_hover_image": true,
+      "product_image_scatter": false,
+      "product_video_style": "muted",
+      "reviews_layout": "full",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "roboto_condensed_n4",
+      "type_base_line_height": 1.6,
+      "type_base_size": 18,
+      "type_base_spacing": "25",
+      "type_header_base_size": 46,
+      "type_header_capitalize": true,
+      "type_header_font_family": "roboto_condensed_i7",
+      "type_header_line_height": 1,
+      "type_header_spacing": "-25",
+      "type_product_capitalize": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": false,
+            "header_search_enable": true,
+            "show_announcement": false,
+            "show_announcement_home_only": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": true,
+            "show_social_icons": true,
+            "menu": "footer",
+            "newsletter_title": "Join the club",
+            "newsletter_richtext": "",
+            "show_payment_icons": false,
+            "show_copyright": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row_desktop": 3
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {}
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_image": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "blocks": {
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "Why choose us?",
+                "align_text": "center",
+                "alt": true,
+                "enable_image_1": false,
+                "image_width_1": 650,
+                "title_1": "Reason one",
+                "text_1": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_2": false,
+                "image_width_2": 650,
+                "title_2": "Reason two",
+                "text_2": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_3": false,
+                "image_width_3": 650,
+                "title_3": "",
+                "text_3": ""
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 700,
+                "text": "<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>",
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            }
+          },
+          "block_order": [
+            "product-text-columns",
+            "product-text-and-image",
+            "product-background-image-text"
+          ],
+          "settings": {}
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "1559681273277": {
+              "type": "image-hero",
+              "settings": {
+                "title_size": 80,
+                "text_align": "vertical-center horizontal-center"
+              }
+            },
+            "1558643031646": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 450,
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "1558643392013": {
+              "type": "map",
+              "settings": {}
+            },
+            "1558643431127": {
+              "type": "collection-slider",
+              "settings": {
+                "per_row": "large"
+              }
+            },
+            "1558643225272": {
+              "type": "hero-video",
+              "settings": {
+                "title": "Keep it short\nand sweet.",
+                "title_size": 60,
+                "subheading": "Explain your brand in more depth on your product pages",
+                "text_align": "vertical-center horizontal-center",
+                "section_height": "750px",
+                "mobile_height": "100vh"
+              }
+            }
+          },
+          "block_order": [
+            "1559681273277",
+            "1558643031646",
+            "1558643392013",
+            "1558643431127",
+            "1558643225272"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": true
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "1543003878234": {
+          "type": "featured-collections",
+          "blocks": {
+            "1543003878234-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1543003878234-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1543003878234-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1543003878234-3": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1543003878234-0",
+            "1543003878234-1",
+            "1543003878234-2",
+            "1543003878234-3"
+          ],
+          "settings": {
+            "alt": true,
+            "title": "Shop all"
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {}
+        },
+        "1556162802939": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row_desktop": 4,
+            "per_row_mobile": "2",
+            "description": "For more traditional layouts"
+          }
+        },
+        "1556162914490": {
+          "type": "featured-collection-slider",
+          "settings": {
+            "description": "With infinite scrolling"
+          }
+        },
+        "1558626745581": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true
+          }
+        },
+        "1559096311192": {
+          "type": "hero-animated",
+          "blocks": {
+            "1559096311192-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1559097202495": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1559096311192-0",
+            "1559097202495"
+          ],
+          "settings": {
+            "style": "gif",
+            "title": "Make an impression",
+            "title_size": 80,
+            "text_align": "vertical-center horizontal-center"
+          }
+        },
+        "1559098181700": {
+          "type": "slideshow",
+          "blocks": {
+            "1559098181700-0": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "text_align": "vertical-bottom horizontal-left"
+              }
+            }
+          },
+          "block_order": [
+            "1559098181700-0"
+          ],
+          "settings": {}
+        },
+        "1559321610782": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Keep it short\nand sweet.",
+            "title_size": 80,
+            "subheading": "Explain your brand in more depth on your product pages",
+            "text_align": "vertical-bottom horizontal-center",
+            "section_height": "750px",
+            "mobile_height": "100vh"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true
+          }
+        },
+        "1559585995085": {
+          "type": "featured-collection-slider",
+          "settings": {
+            "description": "With infinite scrolling"
+          }
+        },
+        "1559586187853": {
+          "type": "marquee",
+          "settings": {
+            "text": "Follow us for monthly apparel giveaways",
+            "text_size": 36
+          }
+        },
+        "1559687247066": {
+          "type": "text-and-image",
+          "settings": {
+            "image_width": 700,
+            "button_label": "Our story",
+            "button_style": "secondary",
+            "layout": "right"
+          }
+        },
+        "1559687361077": {
+          "type": "text-and-image",
+          "settings": {
+            "image_width": 700,
+            "button_label": "Contact us",
+            "button_style": "secondary",
+            "layout": "left"
+          }
+        },
+        "1559687710135": {
+          "type": "map",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "1559321610782",
+        "1559585995085",
+        "1558626745581",
+        "1559096311192",
+        "1556162914490",
+        "1559098181700",
+        "1556162802939",
+        "1543003878234",
+        "1559687247066",
+        "1559687361077",
+        "1559687710135",
+        "1559586187853"
+      ]
+    },
+    "Luxe": {
+      "animate_images": true,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "shadow",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_use_header_image": false,
+      "color_alt_bg": "#ffffff",
+      "color_alt_text": "#333029",
+      "color_announcement": "#c67066",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#fdfbfa",
+      "color_body_text": "#333029",
+      "color_button": "#c67066",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#c67066",
+      "color_drawer_background": "#fdf9f5",
+      "color_drawer_text": "#333029",
+      "color_image_bg": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#eee5e0",
+      "color_newsletter": "#c67066",
+      "color_newsletter_text": "#ffffff",
+      "color_sale_price": "#333029",
+      "color_sale_tag": "#c67066",
+      "color_small_image_bg": "#fdfbfa",
+      "desktop_loader_width": 140,
+      "mobile_loader_width": 130,
+      "product_grid_image_size": "natural",
+      "product_hover_details": true,
+      "product_hover_image": true,
+      "product_image_scatter": false,
+      "product_video_style": "muted",
+      "reviews_layout": "full",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "futura_n4",
+      "type_base_line_height": 1.7,
+      "type_base_size": 18,
+      "type_base_spacing": "25",
+      "type_header_base_size": 50,
+      "type_header_capitalize": false,
+      "type_header_font_family": "itc_novarese_n5",
+      "type_header_line_height": 1.1,
+      "type_header_spacing": "0",
+      "type_product_capitalize": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "show_announcement": true,
+            "show_announcement_home_only": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": true,
+            "show_social_icons": true,
+            "show_payment_icons": false,
+            "show_copyright": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row_desktop": 3
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {}
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_image": false,
+            "blog_show_tags": true,
+            "blog_show_date": false,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": false,
+            "blog_show_comments": true,
+            "blog_show_author": false
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "blocks": {
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "Why choose us?",
+                "align_text": "center",
+                "alt": true,
+                "enable_image_1": false,
+                "image_width_1": 650,
+                "title_1": "Reason one",
+                "text_1": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_2": false,
+                "image_width_2": 650,
+                "title_2": "Reason two",
+                "text_2": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_3": false,
+                "image_width_3": 650,
+                "title_3": "",
+                "text_3": ""
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 700,
+                "text": "<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>",
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            }
+          },
+          "block_order": [
+            "product-text-columns",
+            "product-text-and-image",
+            "product-background-image-text"
+          ],
+          "settings": {}
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "1558643031646": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 400,
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "1558643225272": {
+              "type": "hero-video",
+              "settings": {
+                "title": "Keep it short\nand sweet.",
+                "title_size": 47,
+                "subheading": "Explain your brand in more depth on your product pages",
+                "text_align": "vertical-center horizontal-center",
+                "section_height": "750px",
+                "mobile_height": "100vh"
+              }
+            },
+            "1558643431127": {
+              "type": "collection-slider",
+              "settings": {
+                "per_row": "small"
+              }
+            },
+            "1558643392013": {
+              "type": "map",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1558643031646",
+            "1558643225272",
+            "1558643431127",
+            "1558643392013"
+          ],
+          "settings": {
+            "page_title_enable": true,
+            "page_content_enable": true
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "title_enable": true,
+            "display_type": "all"
+          }
+        },
+        "1555097143929": {
+          "type": "text-and-image",
+          "settings": {
+            "image_width": 700,
+            "button_style": "btn",
+            "layout": "right"
+          }
+        },
+        "1555439851826": {
+          "type": "background-image-text",
+          "settings": {
+            "color_border": "#4f1c3a",
+            "layout": "right"
+          }
+        },
+        "1556162802939": {
+          "type": "featured-collection-slider",
+          "settings": {}
+        },
+        "1556162914490": {
+          "type": "featured-collection-slider",
+          "settings": {}
+        },
+        "1558625522348": {
+          "type": "background-image-text",
+          "settings": {
+            "color_border": "#4f1c3a",
+            "layout": "left"
+          }
+        },
+        "1558626497917": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Keep it short\nand sweet.",
+            "title_size": 80,
+            "subheading": "Explain your brand in more depth on your product pages",
+            "text_align": "vertical-center horizontal-center",
+            "section_height": "750px",
+            "mobile_height": "100vh"
+          }
+        },
+        "1558626745581": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true
+          }
+        },
+        "1559155590855": {
+          "type": "text-columns",
+          "blocks": {
+            "1559155590855-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": false,
+                "title": "Reason one"
+              }
+            },
+            "1559155590855-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": false,
+                "title": "Reason two"
+              }
+            }
+          },
+          "block_order": [
+            "1559155590855-0",
+            "1559155590855-1"
+          ],
+          "settings": {
+            "title": "Why choose us?",
+            "align_text": "center",
+            "alt": true
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {}
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "newsletter_enable": true,
+            "show_share_buttons": false,
+            "show_image": true
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "per_row": "small"
+          }
+        }
+      },
+      "content_for_index": [
+        "1558626497917",
+        "1556162914490",
+        "1558626745581",
+        "1555097143929",
+        "1555439851826",
+        "1559155590855",
+        "1556162802939",
+        "1558625522348"
+      ]
+    },
+    "Hype": {
+      "animate_images": false,
+      "animate_page_transition_style": "page-logo",
+      "button_style": "shadow",
+      "cart_type": "sticky",
+      "checkout_accent_color": "#111111",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_sidebar_background_color": "#fafafa",
+      "color_alt_bg": "#000000",
+      "color_alt_text": "#ffffff",
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_cart_dot": "#FF2300",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_image_bg": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 10,
+      "color_image_text": "#ffffff",
+      "color_large_image_bg": "#000000",
+      "color_newsletter": "#000000",
+      "color_newsletter_text": "#ffffff",
+      "color_small_image_bg": "#f2f2f2",
+      "desktop_loader_width": 190,
+      "mobile_loader_width": 180,
+      "product_grid_image_size": "natural",
+      "product_hover_details": false,
+      "product_hover_image": true,
+      "product_image_scatter": true,
+      "product_video_style": "muted",
+      "reviews_layout": "full",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "basic_commercial_n7",
+      "type_base_line_height": 1.3,
+      "type_base_size": 20,
+      "type_base_spacing": "25",
+      "type_header_base_size": 48,
+      "type_header_capitalize": true,
+      "type_header_font_family": "basic_commercial_n7",
+      "type_header_line_height": 0.9,
+      "type_header_spacing": "25",
+      "type_product_capitalize": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "show_announcement": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_newsletter": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "per_row_desktop": 3
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {}
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_image": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "blocks": {
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "Why choose us?",
+                "align_text": "center",
+                "alt": true,
+                "enable_image_1": false,
+                "image_width_1": 650,
+                "title_1": "Reason one",
+                "text_1": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_2": false,
+                "image_width_2": 650,
+                "title_2": "Reason two",
+                "text_2": "<p>Use this section to explain your company philosophy or standards. Add images for emphasis. This content will appear on all products.<\/p>",
+                "enable_image_3": false,
+                "image_width_3": 650,
+                "title_3": "",
+                "text_3": ""
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 700,
+                "text": "<p>Pair large text with an image to tell a story, explain a detail about your products, or describe a new promotion.<\/p>",
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "layout": "right"
+              }
+            }
+          },
+          "block_order": [
+            "product-text-columns",
+            "product-text-and-image",
+            "product-background-image-text"
+          ],
+          "settings": {}
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "1558643031646": {
+              "type": "text-and-image",
+              "settings": {
+                "image_width": 400,
+                "button_style": "primary",
+                "layout": "right"
+              }
+            },
+            "1558643431127": {
+              "type": "collection-slider",
+              "settings": {
+                "per_row": "small"
+              }
+            }
+          },
+          "block_order": [
+            "1558643031646",
+            "1558643431127"
+          ],
+          "settings": {
+            "page_title_enable": true,
+            "page_content_enable": true
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "enable_newsletter": true
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {}
+        },
+        "1555097143929": {
+          "type": "text-and-image",
+          "settings": {}
+        },
+        "1556162802939": {
+          "type": "featured-collection-slider",
+          "settings": {}
+        },
+        "1556162914490": {
+          "type": "featured-collection-slider",
+          "settings": {}
+        },
+        "1559240039950": {
+          "type": "hero-animated",
+          "blocks": {
+            "1559240039950-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1559240039950-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "1559309176406": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1559240039950-0",
+            "1559240039950-1",
+            "1559309176406"
+          ],
+          "settings": {
+            "style": "gif",
+            "title_size": 72,
+            "text_align": "vertical-bottom horizontal-right"
+          }
+        },
+        "1559241610369": {
+          "type": "marquee",
+          "settings": {
+            "text": "☞ FREE SHIPPING AND RETURNS",
+            "text_size": 70,
+            "text_spacing": true,
+            "color_scheme": "text",
+            "direction": "left"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "per_row": "large"
+          }
+        },
+        "1559249041610": {
+          "type": "hero-video",
+          "settings": {
+            "title": "Keep it short\nand sweet.",
+            "title_size": 80,
+            "subheading": "Explain your brand in more depth on your product pages",
+            "text_align": "vertical-bottom horizontal-left",
+            "section_height": "750px",
+            "mobile_height": "100vh"
+          }
+        }
+      },
+      "content_for_index": [
+        "1559240039950",
+        "1555097143929",
+        "1559241610369",
+        "1556162914490",
+        "1559249041610",
+        "1556162802939"
+      ]
+    }
+  }
+}
