@@ -1,44 +1,44 @@
 {%- liquid
-    assign paginate_by = section.settings.rows | times: section.settings.per_row_desktop
-    assign collection = collections[section.settings.home_featured_products]
-  
-    case section.settings.per_row_desktop
-      when 2
-        assign grid_large_width = 'medium-up--one-half'
-      when 3
-        assign grid_large_width = 'medium-up--one-third'
-      when 4
-        assign grid_large_width = 'medium-up--one-quarter'
-    endcase
-    assign per_row_mobile = section.settings.per_row_mobile
-    assign grid_small_width = 'grid-product--padded'
-    if section.settings.per_row_mobile contains '2'
-      assign per_row_mobile = 2
-      assign grid_small_width = 'small--one-half'
-    endif
-  -%}
-  
-  {%- capture grid_item_width -%}{{ grid_small_width }} {{ grid_large_width}}{%- endcapture -%}
-  
-  <div class="index-section{% if section.settings.alt %} index-section--alt{% endif %}">
-  
-    <div
-      id="CollectionSection-{{ section.id }}"
-      data-section-id="{{ section.id }}"
-      data-section-type="featured-collection"
-      data-scrollable="false"
-      data-product-sliders-mobile="{% if section.settings.per_row_mobile == '1' %}true{% else %}false{% endif %}"
-      data-paginate="false"
-      data-paginate-by="{{ paginate_by }}"
-      data-collection-url="{{ collection.url }}"
-      data-collection-count="{{ collection.all_products_count }}"
-      data-aos>
-      {%- if section.settings.title != blank -%}
-        <div class="page-width">
-          <header class="section-header">
-            <h2 class="section-header__title appear-delay">
+  assign paginate_by = section.settings.rows | times: section.settings.per_row_desktop
+  assign collection = collections[section.settings.home_featured_products]
 
-{% comment %} added code - am {% endcomment %}
+  case section.settings.per_row_desktop
+    when 2
+      assign grid_large_width = 'medium-up--one-half'
+    when 3
+      assign grid_large_width = 'medium-up--one-third'
+    when 4
+      assign grid_large_width = 'medium-up--one-quarter'
+  endcase
+  assign per_row_mobile = section.settings.per_row_mobile
+  assign grid_small_width = 'grid-product--padded'
+  if section.settings.per_row_mobile contains '2'
+    assign per_row_mobile = 2
+    assign grid_small_width = 'small--one-half'
+  endif
+-%}
+
+{%- capture grid_item_width -%}{{ grid_small_width }} {{ grid_large_width}}{%- endcapture -%}
+
+<div class="index-section{% if section.settings.alt %} index-section--alt{% endif %}">
+
+  <div
+    id="CollectionSection-{{ section.id }}"
+    data-section-id="{{ section.id }}"
+    data-section-type="featured-collection"
+    data-scrollable="false"
+    data-product-sliders-mobile="{% if section.settings.per_row_mobile == '1' %}true{% else %}false{% endif %}"
+    data-paginate="false"
+    data-paginate-by="{{ paginate_by }}"
+    data-collection-url="{{ collection.url }}"
+    data-collection-count="{{ collection.all_products_count }}"
+    data-aos>
+    {%- if section.settings.title != blank -%}
+      <div class="page-width">
+        <header class="section-header">
+          <h2 class="section-header__title appear-delay">
+
+{% comment %} added code. Adding animated svg textPath on scroll for section titles {% endcomment %}
               {% style %}
               .title-Z {
               z-index: 200000;
@@ -51,198 +51,218 @@
                   .wave-header {
                   font-size: calc(var(--typeHeaderSize)*1.3);
                   }
+                  .text-container text{
+                    font-size: calc(var(--typeHeaderSize)*1);
+                  }
               }
               @media only screen and (max-width:768px){
                   .wave-header {
                   font-size: calc(var(--typeHeaderSize)*1);
                   }
+                  .text-container text{
+                    font-size: calc(var(--typeHeaderSize)*3*.85);
+                  }
               }
+              
               {% endstyle %}
 
-              <script>
-                  console.clear();
+            <script>
+              $(document).ready(function(){
+                setInterval(function(){
+                 
+//                     var counter = 1;
 
-                  var textPath99 = document.querySelector('#text-path99');
-                  var textContainer99 = document.querySelector('#text-container99');
-                  var path99 = document.querySelector( textPath99.getAttribute('href') );
-                  var pathLength99 = path99.getTotalLength();
-                  console.log(pathLength99);
+//                     $(".text-containers").each(function () {
+//                       counter++;                  
+//                       $(this).addClass("row_" + counter);                  
+//                     });
+                  letterCarousel('.text-containers' ,'.text-paths');
 
-                  function updateTextPathOffset99(offset99){
-                      textPath99.setAttribute('startOffset', offset99); 
+                  function letterCarousel(parent_cls,child_cls) {
+
+                    var  e = jQuery(parent_cls+' '+child_cls);
+                    var t = jQuery(window).height();
+
+                    jQuery(window).on("scroll", function() {
+                      if (jQuery(parent_cls).length) {
+                        var t = jQuery(document).scrollTop() + jQuery(window).height(),
+                            n = jQuery(parent_cls).offset().top;
+
+                        if (n <= t) {
+                         var i = jQuery(document).scrollTop() - n + jQuery(window).height();
+                          var scroll = i + 5 * 100 ;
+                          var scroll_slow = scroll + ((scroll/20)/1000);
+                          var img_scroll = scroll_slow * 2 /100;
+
+
+                          e.attr('startOffset', img_scroll + '%');
+                        }
+                      }
+                    });
                   }
+                },1000); });
+            </script>
+            
 
-                  updateTextPathOffset99(pathLength99);
+         
+             <svg class="text-containers" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
+              <path id="text-curves" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
 
-                  function onScroll99(){
-                  requestAnimationFrame(function(){
-                      var rect99 = textContainer99.getBoundingClientRect();
-                      var scrollPercent99 = rect99.y / window.innerHeight;
-                      console.log(scrollPercent99);
-                      updateTextPathOffset99( -scrollPercent99 * .5 * pathLength99 );
-                  });
-                  }
+              <text y="40">
+                <textPath class="text-paths" href="#text-curves" startOffset="50%">
+                  {{ section.settings.title }}
+                </textPath>
+              </text>
+            </svg>
+            
+          
 
-                  window.addEventListener('scroll',onScroll99);
-              </script>
-
-{% if section.settings.title contains 'DELICATESSEN' %}
-                <svg id="text-container99" viewBox="50 -20 1000 180"  xmlns="http://www.w3.org/2000/svg" style="display: inline;">
-                  <path id="text-curve99" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
-                  <text x="50">
-                  <textPath id="text-path99" href="#text-curve99" startOffset="200">
-              {{ section.settings.title }}
-                  </textPath>
-                  </text>
-              </svg>
-{% endif %}
 {% comment %} end added code. {% endcomment %}
-
-            </h2>
-            {%- if section.settings.description != blank -%}
-              <div class="rte section-header__description section-header__description--large appear-delay-1">
-                {{ section.settings.description }}
-              </div>
-            {%- endif -%}
-          </header>
-        </div>
-      {%- endif -%}
-  
-      <div class="page-width page-width--flush">
-        <div data-pagination-wrapper>
-          <div
-            class="grid grid--uniform grid--scattered-large-4 grid--scattered-small-{{ per_row_mobile }} appear-delay-3{% if section.settings.per_row_mobile == '2-flush' %} small--grid--flush{% endif %}"
-            data-product-container>
-  
-            {%- if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 -%}
-  
-              {%- liquid
-                unless emptyState
-                  assign emptyState = true
-                endunless
-              -%}
-  
-              {%- for i in (1..paginate_by) -%}
-                <div class="grid__item grid-product {{ grid_item_width }}{% if settings.product_hover_details %} grid-product__hover-details{% endif %}">
-                  <div class="grid-product__content">
-                    <a href="{{ product.url | within: collection }}" class="grid-product__link {% if sold_out %} grid-product__link--disabled{% endif %}">
-                      <div class="product-slider"
-                        data-image-count="1"
-                        data-id="1234">
-                        <div class="product-slide">
-                          {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                          <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
-                        </div>
-                      </div>
-                      <div class="grid-product__meta">
-                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
-                        <div class="grid-product__price">$29</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              {%- endfor -%}
-  
-            {%- else -%}
-  
-              {%- for product in collections[section.settings.home_featured_products].products limit: paginate_by -%}
-                {%- render 'product-grid-item'
-                  product: product,
-                  grid_item_width: grid_item_width
-                -%}
-              {%- endfor -%}
-  
-            {%- endif -%}
-          </div>
-  
-          {%- if section.settings.view_all -%}
-            <div class="text-center">
-              <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn">
-                {{ 'collections.general.all_of_collection' | t }}
-              </a>
+        
+          </h2>
+          {%- if section.settings.description != blank -%}
+            <div class="rte section-header__description section-header__description--large appear-delay-1">
+              {{ section.settings.description }}
             </div>
           {%- endif -%}
+        </header>
+      </div>
+    {%- endif -%}
+
+    <div class="page-width page-width--flush">
+      <div data-pagination-wrapper>
+        <div
+          class="grid grid--uniform grid--scattered-large-4 grid--scattered-small-{{ per_row_mobile }} appear-delay-3{% if section.settings.per_row_mobile == '2-flush' %} small--grid--flush{% endif %}"
+          data-product-container>
+
+          {%- if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 -%}
+
+            {%- liquid
+              unless emptyState
+                assign emptyState = true
+              endunless
+            -%}
+
+            {%- for i in (1..paginate_by) -%}
+              <div class="grid__item grid-product {{ grid_item_width }}{% if settings.product_hover_details %} grid-product__hover-details{% endif %}">
+                <div class="grid-product__content">
+                  <a href="{{ product.url | within: collection }}" class="grid-product__link {% if sold_out %} grid-product__link--disabled{% endif %}">
+                    <div class="product-slider"
+                      data-image-count="1"
+                      data-id="1234">
+                      <div class="product-slide">
+                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                      </div>
+                    </div>
+                    <div class="grid-product__meta">
+                      <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                      <div class="grid-product__price">$29</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            {%- endfor -%}
+
+          {%- else -%}
+
+            {%- for product in collections[section.settings.home_featured_products].products limit: paginate_by -%}
+              {%- render 'product-grid-item'
+                product: product,
+                grid_item_width: grid_item_width
+              -%}
+            {%- endfor -%}
+
+          {%- endif -%}
         </div>
+
+        {%- if section.settings.view_all -%}
+          <div class="text-center">
+            <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn">
+              {{ 'collections.general.all_of_collection' | t }}
+            </a>
+          </div>
+        {%- endif -%}
       </div>
     </div>
-  
   </div>
-  
-  {% schema %}
-    {
+
+</div>
+
+{% schema %}
+  {
+    "name": "Featured collection grid",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection grid"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "collection",
+        "id": "home_featured_products",
+        "label": "Collection"
+      },
+      {
+        "type": "range",
+        "id": "rows",
+        "label": "Rows of products",
+        "default": 2,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "per_row_desktop",
+        "label": "Desktop products per row",
+        "default": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "type": "select",
+        "id": "per_row_mobile",
+        "label": "Mobile products per row",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2, spaced"
+          },
+          {
+            "value": "2-flush",
+            "label": "2, flush"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "view_all",
+        "label": "Show 'View all' link",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "alt",
+        "label": "Use alternate section color"
+      }
+    ],
+    "presets": [{
       "name": "Featured collection grid",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Featured collection grid"
-        },
-        {
-          "type": "text",
-          "id": "description",
-          "label": "Description"
-        },
-        {
-          "type": "collection",
-          "id": "home_featured_products",
-          "label": "Collection"
-        },
-        {
-          "type": "range",
-          "id": "rows",
-          "label": "Rows of products",
-          "default": 2,
-          "min": 1,
-          "max": 4,
-          "step": 1
-        },
-        {
-          "type": "range",
-          "id": "per_row_desktop",
-          "label": "Desktop products per row",
-          "default": 3,
-          "min": 2,
-          "max": 4,
-          "step": 1
-        },
-        {
-          "type": "select",
-          "id": "per_row_mobile",
-          "label": "Mobile products per row",
-          "default": "1",
-          "options": [
-            {
-              "value": "1",
-              "label": "1"
-            },
-            {
-              "value": "2",
-              "label": "2, spaced"
-            },
-            {
-              "value": "2-flush",
-              "label": "2, flush"
-            }
-          ]
-        },
-        {
-          "type": "checkbox",
-          "id": "view_all",
-          "label": "Show 'View all' link",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "alt",
-          "label": "Use alternate section color"
-        }
-      ],
-      "presets": [{
-        "name": "Featured collection grid",
-        "category": "Collection"
-      }],
-      "blocks" : []
-    }
-  {% endschema %}
-  
+      "category": "Collection"
+    }],
+    "blocks" : []
+  }
+{% endschema %}
