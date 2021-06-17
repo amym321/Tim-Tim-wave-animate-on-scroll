@@ -38,7 +38,7 @@
         <header class="section-header">
           <h2 class="section-header__title appear-delay">
 
-{% comment %} added code. Adding animated svg textPath on scroll for section titles {% endcomment %}
+{% comment %} added code -am. Adding animated svg textPath on scroll for section titles {% endcomment %}
               {% style %}
               .title-Z {
               z-index: 200000;
@@ -52,7 +52,18 @@
                   font-size: calc(var(--typeHeaderSize)*1.3);
                   }
                   .text-container text{
-                    font-size: calc(var(--typeHeaderSize)*1);
+                    font-size: calc(var(--typeHeaderSize)*2.1);
+                  transform: translateX(13%);
+                  }
+                  .text-containers text{
+                    font-size: calc(var(--typeHeaderSize)*2.1);
+                    transform: translateX(10%);
+                  }
+                  .text-container textPath{
+                    transition: all 1.5s;
+                  }
+                  .text-containers text{
+                    font-size: calc(var(--typeHeaderSize)*2.5);
                   }
               }
               @media only screen and (max-width:768px){
@@ -60,64 +71,88 @@
                   font-size: calc(var(--typeHeaderSize)*1);
                   }
                   .text-container text{
-                    font-size: calc(var(--typeHeaderSize)*3*.85);
+                    font-size: calc(var(--typeHeaderSize)*5);
+                  transform: translateX(6.3992%);
+                  }
+                  .text-containers text{
+                  font-size: calc(var(--typeHeaderSize)*5);
+                  
                   }
               }
               
               {% endstyle %}
 
             <script>
-              $(document).ready(function(){
+$(document).ready(function(){
                 setInterval(function(){
-                 
-//                     var counter = 1;
+                    
+              
+              letterCarousel('.text-containers' ,'.text-paths');
 
-//                     $(".text-containers").each(function () {
-//                       counter++;                  
-//                       $(this).addClass("row_" + counter);                  
-//                     });
-                  letterCarousel('.text-containers' ,'.text-paths');
+              function letterCarousel(parent_cls,child_cls) {
 
-                  function letterCarousel(parent_cls,child_cls) {
+                var  e = jQuery(parent_cls+' '+child_cls);
+                var t = jQuery(window).height();
 
-                    var  e = jQuery(parent_cls+' '+child_cls);
-                    var t = jQuery(window).height();
+                jQuery(window).on("scroll", function() {
+                  if (jQuery(parent_cls).length) {
+                    var t = jQuery(document).scrollTop() + jQuery(window).height(),
+                        n = jQuery(parent_cls).offset().top;
 
-                    jQuery(window).on("scroll", function() {
-                      if (jQuery(parent_cls).length) {
-                        var t = jQuery(document).scrollTop() + jQuery(window).height(),
-                            n = jQuery(parent_cls).offset().top;
-
-                        if (n <= t) {
-                         var i = jQuery(document).scrollTop() - n + jQuery(window).height();
-                          var scroll = i + 5 * 100 ;
-                          var scroll_slow = scroll + ((scroll/20)/1000);
-                          var img_scroll = scroll_slow * 2 /100;
-
-
-                          e.attr('startOffset', img_scroll + '%');
-                        }
-                      }
-                    });
+                    if (n <= t) {
+                      
+                      var i = jQuery(document).scrollTop() - n + jQuery(window).height();
+                      var scroll = i + 6 * 100 ;
+                      var scroll_slow = scroll + ((scroll/70)/1000);
+                      var img_scroll = scroll_slow * 6 /100;
+                      
+                     e.attr('startOffset', img_scroll + '%');   
+                  
+//                       if($(window).width() <= 650){
+//                       	 if (n <= t) {
+//                            var i = jQuery(document).scrollTop() - n + jQuery(window).height();
+//                            var scroll = i + 7 * 100 ;
+//                            var scroll_slow = scroll + ((scroll/90)/1000);
+//                            var img_scroll = scroll_slow * 4 /100;
+                        
+//                            e.attr('startOffset', img_scroll + '%');                     
+//                          }
+//                       }
+                      
                   }
-                },1000); });
+                  }
+                })
+              }
+                             
+              if($(window).width() <= 650){
+                 $('.text-containers').attr("viewBox","00 0 2091.5 363.5");
+                 $('.text-containers path').attr("d","M0,168.5c348.6,0,348.6,80,697.2,80c348.6,0,348.6-80,697.2-80s348.6,80,697.2,80");
+                }
+              },1000);
+            });
             </script>
             
 
          
-             <svg class="text-containers" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
+<!--                <svg class="text-containers" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
               <path id="text-curves" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none"/>
 
               <text y="40">
                 <textPath class="text-paths" href="#text-curves" startOffset="50%">
-                  {{ section.settings.title }}
+                 
+                </textPath>
+              </text>
+            </svg> -->
+              <svg class="text-containers" viewBox="99 0 2091.5 256.5" xmlns="http://www.w3.org/2000/svg">
+              <path id="text-curve" d="M0,168.5c348.6,0,348.6,80,697.2,80c348.6,0,348.6-80,697.2-80s348.6,80,697.2,80" fill="none"></path>
+
+              <text text-anchor="middle"  data-parallax="{"translateX": ["30%","10%"]}">
+                <textPath class="text-paths" href="#text-curve" startOffset="10%" data-parallax="{&quot;startOffset&quot;: [&quot;20%&quot;,&quot;50%&quot;]}">
+                   {{ section.settings.title }}
                 </textPath>
               </text>
             </svg>
-            
-          
-
-{% comment %} end added code. {% endcomment %}
+{% comment %} end added code - am. {% endcomment %}
         
           </h2>
           {%- if section.settings.description != blank -%}
