@@ -7508,3 +7508,4 @@ lazySizesConfig.expFactor = 4;
   });
 
 })(theme.jQuery);
+

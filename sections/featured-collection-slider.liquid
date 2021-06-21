@@ -53,7 +53,27 @@
         <div class="page-width">
           <header class="section-header" data-aos>
             <h2 class="section-header__title appear-delay  ">
-              {% comment %} added code - am. {% endcomment %}
+              {% style %}
+                @media only screen and (min-width:769px){                   
+                    .text-container text{
+                    	font-size: calc(var(--typeHeaderSize)*2.1);
+              			transform: translateX(13%);
+                    }                    
+                    .text-container textPath{
+                    	transition: all 1.5s;
+                    }                   
+                }
+                @media only screen and (max-width:768px){
+                    .text-container text{
+                    	font-size: calc(var(--typeHeaderSize)*5);
+              			transform: translateX(6.3992%);
+                    }
+                    .text-containers text{
+                    	font-size: calc(var(--typeHeaderSize)*5);	
+                    }
+                }
+              	
+                {% endstyle %}
               <script>
                 var counter = 1;
                 
@@ -171,13 +191,13 @@
               <svg class="text-container" viewBox="99 0 2091.5 256.5" xmlns="http://www.w3.org/2000/svg">
                 <path id="text-curve" d="M0,168.5c348.6,0,348.6,80,697.2,80c348.6,0,348.6-80,697.2-80s348.6,80,697.2,80" fill="none"></path>
 
-                <text text-anchor="middle"  data-parallax="{"translateX": ["30%","10%"]}">
-                  <textPath class="text-path" href="#text-curve" startOffset="10%" data-parallax="{&quot;startOffset&quot;: [&quot;20%&quot;,&quot;50%&quot;]}">
+                <text text-anchor="middle">
+                  <textPath class="text-path" href="#text-curve" startOffset="10%">
                      {{ section.settings.title }}
                   </textPath>
                 </text>
               </svg>
-            {% comment %} end added code - am. {% endcomment %}
+            
               
             </h2>
             {%- if section.settings.description != blank -%}
